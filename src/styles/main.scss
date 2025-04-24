@@ -1,0 +1,154 @@
+@use "@/styles/reset";
+@use "@/styles/normalize";
+@use "@/styles/colors";
+@use "@/styles/mixins";
+
+body {
+  background: colors.$primary-bg-color;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: colors.$primary-color;
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: colors.$link-color;
+
+  &:hover {
+    color: colors.$link-hover-color;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: colors.$header-color;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: colors.$header-color;
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  background-color: colors.$bg-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  height: 8rem;
+  background-image: url("/robot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .logo-text {
+    color: colors.$primary-color;
+    font-size: 5rem;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    padding: 0 2rem 0 120px;
+  }
+}
+
+nav {
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  a {
+    font-weight: 500;
+    color: colors.$primary-color;
+    transition: color 0.3s ease;
+
+    &.active {
+      color: colors.$link-color;
+    }
+  }
+}
+
+.main-section {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+
+.hero-photo {
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+  max-width: 500px;
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  @include mixins.button;
+}
+
+.btn.secondary {
+  @include mixins.secondary-button;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: colors.$bg-color;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+
+  .social a {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+  }
+
+  .cat-insta {
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    background-image: url("/icons8-fat-cat.png");
+    background-repeat: no-repeat;
+    background-position: 1px 17px;
+  }
+}

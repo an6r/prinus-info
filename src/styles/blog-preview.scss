@@ -1,0 +1,52 @@
+@use "sass:color";
+
+$bg-color: #f4f4f4;
+$card-bg-color: #fff;
+$tags-text-color: #777;
+
+/* Blog Preview */
+.blog-preview {
+  padding: 2rem;
+  background-color: $bg-color;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.blog-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: $card-bg-color;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.tags {
+  margin-top: 1.5rem;
+
+  span {
+    margin: 0 0.5rem;
+    color: $tags-text-color;
+  }
+}

@@ -1,0 +1,62 @@
+@use "../styles/colors";
+@use "../styles/mixins";
+
+.contacts {
+  .introduction {
+    padding: 0 0 2rem;
+  }
+
+  .list-of-contacts {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding-bottom: 2rem;
+
+    li {
+      padding-left: 50px;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: 0;
+
+      &.email {
+        background-image: url("../assets/icons8-email.png");
+        background-position: 4px 0;
+      }
+
+      &.linkedin {
+        background-image: url("../assets/icons8-linkedin.png");
+      }
+
+      &.instagram {
+        background-image: url("../assets/icons8-instagram.png");
+      }
+    }
+  }
+
+  .input-item {
+    position: relative;
+    font-size: 1rem;
+
+    label {
+      font-size: 1.5rem;
+      display: block;
+      margin: .5rem 0 0;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      display: block;
+      padding: 10px 20px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem 0 2rem;
+
+    button {
+      @include mixins.secondary-button;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.about-page {
+  .flex-section {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+  }
+
+  .left-image {
+    flex-direction: row;
+  }
+
+  .text {
+    flex: 1;
+  }
+
+  .image {
+    width: 300px;
+    max-width: 40%;
+    border-radius: 8px;
+  }
+
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .flex-section {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image {
+      max-width: 100%;
+      width: auto;
+    }
+  }
+
+}

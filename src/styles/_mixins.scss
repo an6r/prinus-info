@@ -1,0 +1,20 @@
+@use "../styles/colors";
+
+@mixin button {
+  padding: 0.75rem 1.5rem;
+  background-color: colors.$button-color;
+  color: colors.$button-text-color;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: colors.$button-hover-color;
+    color: colors.$button-text-color;
+    cursor: pointer;
+  }
+}
+
+@mixin secondary-button {
+  @include button;
+  background-color: colors.$secondary-button-color;
+}

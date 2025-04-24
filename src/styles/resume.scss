@@ -1,0 +1,88 @@
+@use "sass:color";
+
+$border-color: #5c4dff;
+$attention-color: #2c2caa;
+
+.resume-container {
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  padding: 0 2rem;
+
+  h2 {
+    margin: 2rem 0 1rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.resume-intro {
+  display: flex;
+}
+
+.introduction {
+  padding: 1rem 2rem 1rem 0;
+}
+
+.pdf-download {
+  text-align: center;
+  font-weight: bold;
+}
+
+.company-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  border-left: 3px solid $border-color;
+  margin-left: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.company-logo {
+  background-color: #fff;
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+
+  position: absolute;
+  top: 10px;
+  left: -25px;
+  border-radius: 50%;
+  border-color: $border-color;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.content-column {
+  flex: 1;
+}
+
+.entry-header h3 {
+  color: $attention-color;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.company-name {
+  display: block;
+}
+
+.duration {
+  display: block;
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.entry-details {
+  list-style: circle;
+  font-size: 0.95rem;
+  padding-left: 1rem;
+  line-height: 1.5;
+
+  li {
+    margin-bottom: 0.4rem;
+  }
+}
+
