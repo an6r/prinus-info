@@ -2,6 +2,9 @@
 
 import type { Metadata } from "next";
 
+import { Amplify } from "aws-amplify";
+import outputs from "@/amplify_outputs.json";
+
 import "@/styles/main.scss"
 
 import Header from "@/components/header";
@@ -11,6 +14,8 @@ export const metadata: Metadata = {
   title: "Personal Site of Maria Prinus",
   description: "Personal Site of Maria Prinus",
 };
+
+Amplify.configure(outputs);
 
 export default function RootLayout({
   children,

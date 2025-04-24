@@ -1,4 +1,5 @@
-import Image, {StaticImageData} from 'next/image';
+import type { Metadata } from 'next'
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import "@/styles/resume.scss";
 
@@ -8,6 +9,12 @@ import evernote_logo from "../../public/companies/evernote-logo.svg";
 import epam_logo from "../../public/companies/epam-logo.png";
 import general_logo from "../../public/companies/icons8-company.png";
 import bsuir_logo from "../../public/companies/bsuir-logo.jpg";
+
+
+export const metadata: Metadata = {
+    title: "Resume of Maria Prinus",
+    description: 'This page contains details about Maria Prinus employment and education',
+}
 
 const resumeData = [
     {
@@ -161,7 +168,7 @@ const ResumeTimeline = () => {
                 enhancing release stability and automation, achieving a 73% reduction in rollbacks in 2022. Looking to
                 apply this expertise in a dynamic role, contributing to both startup and enterprise application development.</p>
                 <div className="pdf-download">
-                    <Link href="../../public/documents/Maria+Prinus+Release+Manager.pdf" target="_blank" rel="noopener noreferrer">
+                    <Link href="/documents/Maria+Prinus+Release+Manager.pdf" target="_blank" rel="noopener noreferrer">
                         <Image src="/icons8-pdf.png" alt="Download PDF" width={90} height={90} />
                         <span>Download my resume</span>
                     </Link>

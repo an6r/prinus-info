@@ -42,3 +42,8 @@ next-env.d.ts
 
 # intellij
 /.idea/
+
+# amplify
+.amplify
+amplify_outputs*
+amplifyconfiguration*

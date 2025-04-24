@@ -3,6 +3,12 @@ import "@/styles/about.scss";
 
 import maria_about from "../../public/photos/maria-prinus-about.jpg";
 import cats_about from "../../public/photos/cats-about.jpg";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "About Maria Prinus",
+    description: "Learn more about Maria Prinus, her cats, and this site",
+}
 
 const Page = () => {
     return (
@@ -26,7 +32,7 @@ const Page = () => {
                 </div>
 
                 <div className="flex-section left-image">
-                    <Image width={500} src={cats_about} alt="Cats on About Page" className="image"/>
+                    <Image width={500} height={394} src={cats_about} alt="Cats on About Page" className="image"/>
                     <div className="text">
                         <p>Over the years, working at companies such as Evernote and MongoDB, I have grown from a developer to
                             a Senior Release Manager. I specialize in designing robust release processes, enhancing

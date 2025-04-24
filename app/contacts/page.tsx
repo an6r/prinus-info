@@ -1,8 +1,15 @@
 import Image from "next/image";
 import Link from 'next/link';
+import type { Metadata } from "next";
 import "@/styles/contacts.scss";
 
-const FormHandler = () => {
+
+export const metadata: Metadata = {
+    title: "Contact Maria Prinus",
+    description: "Reach out to Maria Prinus",
+}
+
+/*const FormHandler = () => {
     return (
         <form action="/contacts" method="post">
         <div className="input-item">
@@ -25,7 +32,7 @@ const FormHandler = () => {
         </div>
     </form>
     );
-};
+};*/
 
 const Page = ()=> {
     return (
@@ -60,9 +67,10 @@ const Page = ()=> {
                 </li>
             </ul>
 
+            {/*}
             <h3>Or send me a message right here</h3>
 
-            <FormHandler />
+            <FormHandler />*/}
         </section>
     );
 };

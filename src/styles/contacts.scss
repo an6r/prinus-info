@@ -12,7 +12,10 @@
     padding-bottom: 2rem;
 
     li {
-      padding-left: 50px;
+      padding: 0 0 10px 50px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
 
       &.email {
       }
