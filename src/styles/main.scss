@@ -54,18 +54,15 @@ header {
 }
 
 .logo {
-  height: 8rem;
-  background-image: url("/robot.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  display: flex;
+  align-items: center;
 
   .logo-text {
+    display: flex;
+    align-items: center;
     color: colors.$primary-color;
     font-size: 5rem;
     font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    padding: 0 2rem 0 120px;
   }
 }
 

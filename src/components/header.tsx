@@ -1,15 +1,22 @@
 import { Jura } from 'next/font/google'
+import Image from "next/image";
 import Link from "next/link";
 
 const jura = Jura({
+    preload: true,
+    style: "normal",
     subsets: ['latin'],
+    weight: "600",
 })
 
 function Header() {
     return (
         <header>
             <div className={jura.className + " logo"}>
-                <Link href="/" className="logo-text">Prinus</Link>
+                <Link href="/" className="logo-text">
+                    <Image src="/robot.png" alt="Prinus Logo" width={120} height={120} />
+                    <span>Prinus</span>
+                </Link>
             </div>
             <nav>
                 <ul>

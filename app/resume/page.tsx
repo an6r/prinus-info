@@ -1,12 +1,19 @@
-import Image from 'next/image';
+import Image, {StaticImageData} from 'next/image';
 import Link from 'next/link';
 import "@/styles/resume.scss";
+
+// Import images
+import mongodb_logo from "../../public/companies/mongodb-logo.png";
+import evernote_logo from "../../public/companies/evernote-logo.svg";
+import epam_logo from "../../public/companies/epam-logo.png";
+import general_logo from "../../public/companies/icons8-company.png";
+import bsuir_logo from "../../public/companies/bsuir-logo.jpg";
 
 const resumeData = [
     {
         title: "Senior Release Manager",
         company: "MongoDB",
-        company_logo: "/app/assets/companies/mongodb-logo.png",
+        company_logo: mongodb_logo,
         location: "Remote",
         duration: "Jun 2023 – Feb 2025",
         bullets: [
@@ -31,7 +38,7 @@ const resumeData = [
     {
         title: "Release Manager",
         company: "Evernote",
-        company_logo: "/app/assets/companies/evernote-logo.svg",
+        company_logo: evernote_logo,
         location: "Redwood City, CA",
         duration: "Feb 2018 – Feb 2023",
         bullets: [
@@ -65,7 +72,7 @@ const resumeData = [
     {
         title: "Lead Software Engineer",
         company: "EPAM Systems",
-        company_logo: "/app/assets/companies/epam-logo.png",
+        company_logo: epam_logo,
         location: "SF Bay Area, CA",
         duration: "Jan 2014 – Feb 2018",
         bullets: [
@@ -81,7 +88,7 @@ const resumeData = [
     {
         title: "Senior Software Engineer",
         company: "EPAM Systems",
-        company_logo: "/app/assets/companies/epam-logo.png",
+        company_logo: epam_logo,
         location: "Minsk, Belarus",
         duration: "Jan 2011 – Feb 2014",
         bullets: [
@@ -95,7 +102,7 @@ const resumeData = [
     {
         title: "Front-end Developer/Content Manager",
         company: "CIM.by",
-        company_logo: "/app/assets/companies/icons8-company.png",
+        company_logo: general_logo,
         location: "Minsk, Belarus",
         duration: "Jul 2009 – Mar 2011",
         bullets: [
@@ -111,7 +118,7 @@ const resumeData = [
 const education = {
     title: "Computer Systems & Networks",
     company: "Belarusian State University of Informatics and Radioelectronics",
-    company_logo: "/app/assets/companies/bsuir-logo.jpg",
+    company_logo: bsuir_logo,
     location: "Minsk, Belarus",
     duration: "2006 – 2011",
     bullets: [],
@@ -119,7 +126,7 @@ const education = {
 
 
 const CompanyItem = ({title, company, location, duration, company_logo, bullets}:
-                     { title: string; company: string; location: string; duration: string; company_logo: string; bullets: Array<string> }) => {
+                     { title: string; company: string; location: string; duration: string; company_logo: StaticImageData; bullets: Array<string> }) => {
     return (
         <div className="company-item">
             <div className="logo-column">
@@ -154,8 +161,8 @@ const ResumeTimeline = () => {
                 enhancing release stability and automation, achieving a 73% reduction in rollbacks in 2022. Looking to
                 apply this expertise in a dynamic role, contributing to both startup and enterprise application development.</p>
                 <div className="pdf-download">
-                    <Link href="/app/documents/Maria+Prinus+Release+Manager.pdf" target="_blank" rel="noopener noreferrer">
-                        <Image src="/app/assets/icons8-pdf.png" alt="Download PDF" />
+                    <Link href="../../public/documents/Maria+Prinus+Release+Manager.pdf" target="_blank" rel="noopener noreferrer">
+                        <Image src="/icons8-pdf.png" alt="Download PDF" width={90} height={90} />
                         <span>Download my resume</span>
                     </Link>
                 </div>

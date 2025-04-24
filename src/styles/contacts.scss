@@ -1,5 +1,5 @@
-@use "../styles/colors";
-@use "../styles/mixins";
+@use "colors";
+@use "mixins";
 
 .contacts {
   .introduction {
@@ -13,21 +13,14 @@
 
     li {
       padding-left: 50px;
-      background-repeat: no-repeat;
-      background-size: 40px;
-      background-position: 0;
 
       &.email {
-        background-image: url("../assets/icons8-email.png");
-        background-position: 4px 0;
       }
 
       &.linkedin {
-        background-image: url("../assets/icons8-linkedin.png");
       }
 
       &.instagram {
-        background-image: url("../assets/icons8-instagram.png");
       }
     }
   }

@@ -1,4 +1,4 @@
-import "../styles/blog-preview.scss";
+import "../../src/styles/blog-preview.scss";
 
 function BlogItems() {
     return (

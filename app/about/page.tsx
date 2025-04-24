@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import "@/styles/about.scss";
 
-const About = () => {
+import maria_about from "../../public/photos/maria-prinus-about.jpg";
+import cats_about from "../../public/photos/cats-about.jpg";
+
+const Page = () => {
     return (
         <section className="about-page">
             <h1>About page</h1>
@@ -19,11 +22,11 @@ const About = () => {
                             tech. Around 2019, I transitioned into release management, driven by a focus on making software
                             delivery smoother, more stable, and more predictable.</p>
                     </div>
-                    <Image width={300} src="/app/photos/maria-prinus-about.jpg" alt="Maria Prinus About Page" className="image"/>
+                    <Image width={300} src={maria_about} alt="Maria Prinus About Page" className="image"/>
                 </div>
 
                 <div className="flex-section left-image">
-                    <Image width={500} src="/app/photos/cats-about.jpg" alt="Cats on About Page" className="image"/>
+                    <Image width={500} src={cats_about} alt="Cats on About Page" className="image"/>
                     <div className="text">
                         <p>Over the years, working at companies such as Evernote and MongoDB, I have grown from a developer to
                             a Senior Release Manager. I specialize in designing robust release processes, enhancing
@@ -45,4 +48,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Page;

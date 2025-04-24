@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from 'next/link';
 import "@/styles/contacts.scss";
 
@@ -26,7 +27,7 @@ const FormHandler = () => {
     );
 };
 
-const Contacts = ()=> {
+const Page = ()=> {
     return (
         <section className="contacts">
             <h1>Get in Touch</h1>
@@ -35,16 +36,27 @@ const Contacts = ()=> {
             </p>
             <ul className="list-of-contacts">
                 <li className="email">
-                    Email: <Link href="mailto:maria@prinus.info">maria@prinus.info</Link>
+                    <Image src="/icons8-email.png" alt="Email" width={40} height={40} />
+                    <span>Email: <Link href="mailto:maria@prinus.info">maria@prinus.info</Link></span>
                 </li>
                 <li className="linkedin">
-                    LinkedIn: <Link href="https://www.linkedin.com/in/mariaprinus/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mariaprinus</Link>
+                    <Image src="/icons8-linkedin.png" alt="LinkedIn Logo" width={40} height={40} />
+                    <span>
+                        LinkedIn: <Link href="https://www.linkedin.com/in/mariaprinus/" target="_blank" rel="noopener
+                        noreferrer">linkedin.com/in/mariaprinus</Link>
+                    </span>
                 </li>
                 <li className="instagram">
-                    Instagram (personal): <Link href="https://www.instagram.com/an6r" target="_blank" rel="noopener noreferrer">@an6r</Link>
+                    <Image src="/icons8-instagram.png" alt="Instagram Logo" width={40} height={40} />
+                    <span>
+                        Instagram (personal): <Link href="https://www.instagram.com/an6r" target="_blank" rel="noopener noreferrer">@an6r</Link>
+                    </span>
                 </li>
                 <li className="instagram cat">
-                    Instagram (cats): <Link href="https://www.instagram.com/linusandsophieandtoby/" target="_blank" rel="noopener noreferrer">@linusandsophieandtoby</Link>
+                    <Image src="/icons8-instagram.png" alt="Instagram Logo" width={40} height={40} />
+                    <span>
+                        Instagram (cats): <Link href="https://www.instagram.com/linusandsophieandtoby/" target="_blank" rel="noopener noreferrer">@linusandsophieandtoby</Link>
+                    </span>
                 </li>
             </ul>
 
@@ -55,4 +67,4 @@ const Contacts = ()=> {
     );
 };
 
-export default Contacts;
+export default Page;
