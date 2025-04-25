@@ -15,10 +15,10 @@ frontend:
       commands:
         - nvm install 22
         - npm install
-        - ls -al
     build:
       commands:
         - npm run build
+        - ls -al
   artifacts:
     baseDirectory: build
     files:
