@@ -13,11 +13,12 @@ frontend:
     prebuild:
       commands:
         - nvm install 22
+        - npm install
     build:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: .next
+    baseDirectory: .amplify-hosting
     files:
       - '**/*'
   cache:
