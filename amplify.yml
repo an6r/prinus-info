@@ -4,6 +4,7 @@ backend:
     prebuild:
       commands:
         - nvm install 22
+        - npm install
     build:
       commands:
         - npm ci --cache .npm --prefer-offline
