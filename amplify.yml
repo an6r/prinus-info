@@ -20,7 +20,7 @@ frontend:
         - npm run build
         - ls -al
   artifacts:
-    baseDirectory: build
+    baseDirectory: .next
     files:
       - '**/*'
   cache:
