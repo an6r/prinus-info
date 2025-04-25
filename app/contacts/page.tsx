@@ -39,7 +39,7 @@ const Page = ()=> {
         <section className="contacts">
             <h1>Get in Touch</h1>
             <p className="introduction">
-                I'd love to hear from you — whether it's about a job opportunity, a genealogy mystery, or just to share cat photos 🐾. Feel free to reach out!
+                I&apos;d love to hear from you — whether it&apos;s about a job opportunity, a genealogy mystery, or just to share cat photos 🐾. Feel free to reach out!
             </p>
             <ul className="list-of-contacts">
                 <li className="email">

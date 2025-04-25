@@ -20,7 +20,7 @@ const Page = () => {
                     <div className="text">
                         <p>Hi! I’m Maria Prinus — a Release Manager, former front-end engineer, and a lifelong learner with
                             a passion for technology history, and design.</p>
-                        <p>Born and raised in Minsk, Belarus, I earned a Specialist degree (equivalent to a Master's) in
+                        <p>Born and raised in Minsk, Belarus, I earned a Specialist degree (equivalent to a Master&apos;s) in
                             Computer Systems and Networks from the Belarusian State University of Informatics and
                             Radioelectronics (BSUIR) in 2011. My career began in web development, focusing on building user
                             interfaces and eventually leading front-end teams at companies like EPAM Systems.</p>

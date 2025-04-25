@@ -3,12 +3,12 @@
 import type { Metadata } from "next";
 
 import { Amplify } from "aws-amplify";
-import outputs from "@/amplify_outputs.json";
 
 import "@/styles/main.scss"
 
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import outputs from "@/amplify_outputs.json";
 
 export const metadata: Metadata = {
   title: "Personal Site of Maria Prinus",
