@@ -45,7 +45,7 @@ const Page = () => {
                     <Image
                         width={300}
                         src={maria_about}
-                        alt="Maria Prinus About Page"
+                        alt="Maria Prinus About"
                         className="image"
                     />
                 </div>
@@ -55,7 +55,7 @@ const Page = () => {
                         width={500}
                         height={394}
                         src={cats_about}
-                        alt="Cats on About Page"
+                        alt="Cats on About"
                         className="image"
                     />
                     <div className="text">
