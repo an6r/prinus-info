@@ -1,58 +1,58 @@
-@use "colors";
-@use "mixins";
+@use 'colors';
+@use 'mixins';
 
 .contacts {
-  .introduction {
-    padding: 0 0 2rem;
-  }
-
-  .list-of-contacts {
-    font-size: 1.5rem;
-    line-height: 3rem;
-    padding-bottom: 2rem;
-
-    li {
-      padding: 0 0 10px 50px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-
-      &.email {
-      }
-
-      &.linkedin {
-      }
-
-      &.instagram {
-      }
-    }
-  }
-
-  .input-item {
-    position: relative;
-    font-size: 1rem;
-
-    label {
-      font-size: 1.5rem;
-      display: block;
-      margin: .5rem 0 0;
+    .introduction {
+        padding: 0 0 2rem;
     }
 
-    input,
-    textarea {
-      width: 100%;
-      display: block;
-      padding: 10px 20px;
-    }
-  }
+    .list-of-contacts {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        padding-bottom: 2rem;
 
-  .buttons {
-    display: flex;
-    gap: 1rem;
-    padding: 1.5rem 0 2rem;
+        li {
+            padding: 0 0 10px 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
 
-    button {
-      @include mixins.secondary-button;
+            &.email {
+            }
+
+            &.linkedin {
+            }
+
+            &.instagram {
+            }
+        }
     }
-  }
+
+    .input-item {
+        position: relative;
+        font-size: 1rem;
+
+        label {
+            font-size: 1.5rem;
+            display: block;
+            margin: 0.5rem 0 0;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            display: block;
+            padding: 10px 20px;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        gap: 1rem;
+        padding: 1.5rem 0 2rem;
+
+        button {
+            @include mixins.secondary-button;
+        }
+    }
 }
