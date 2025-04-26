@@ -7,8 +7,10 @@ Welcome to the codebase behind [**prinus.info**](https://prinus.info) — a pers
 
 This site is built with some of my favorite modern tools:
 
+- ⚛️ **[Next.js](https://nextjs.org/)** – the React framework for fast, modern websites
 - 🧬 **React.js** – for dynamic UI bits
 - 🎨 **SASS** – because CSS needs structure too
+- 🔤 **TypeScript** – making JavaScript smarter and safer
 - 🧑‍💻 **HTML** – the classic
 - ☁️ **AWS Amplify** – hosting & deployment
 - 🤖 **ChatGPT** – yup, this README was partially written with AI help (thanks, buddy!)

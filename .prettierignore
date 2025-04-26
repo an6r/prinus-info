@@ -1,0 +1,6 @@
+# Ignore artifacts:
+/.amplify
+/.idea
+/node_modules
+
+/amplify_outputs.json
