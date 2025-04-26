@@ -1,34 +1,33 @@
 .about-page {
-  .flex-section {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    align-items: flex-start;
-  }
-
-  .left-image {
-    flex-direction: row;
-  }
-
-  .text {
-    flex: 1;
-  }
-
-  .image {
-    border-radius: 8px;
-  }
-
-  /* Responsive for mobile */
-  @media (max-width: 768px) {
     .flex-section {
-      flex-direction: column;
-      align-items: center;
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        align-items: flex-start;
+    }
+
+    .left-image {
+        flex-direction: row;
+    }
+
+    .text {
+        flex: 1;
     }
 
     .image {
-      max-width: 100%;
-      width: auto;
+        border-radius: 8px;
     }
-  }
 
+    /* Responsive for mobile */
+    @media (max-width: 768px) {
+        .flex-section {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image {
+            max-width: 100%;
+            width: auto;
+        }
+    }
 }
