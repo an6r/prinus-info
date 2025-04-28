@@ -4,11 +4,11 @@ import Link from 'next/link';
 import '@/styles/resume.scss';
 
 // Import images
-import mongodb_logo from '../../public/companies/mongodb-logo.png';
-import evernote_logo from '../../public/companies/evernote-logo.svg';
-import epam_logo from '../../public/companies/epam-logo.png';
-import general_logo from '../../public/companies/icons8-company.png';
-import bsuir_logo from '../../public/companies/bsuir-logo.jpg';
+import mongodb_logo from '../../../public/companies/mongodb-logo.png';
+import evernote_logo from '../../../public/companies/evernote-logo.svg';
+import epam_logo from '../../../public/companies/epam-logo.png';
+import general_logo from '../../../public/companies/icons8-company.png';
+import bsuir_logo from '../../../public/companies/bsuir-logo.jpg';
 
 export const metadata: Metadata = {
     title: 'Resume of Maria Prinus',

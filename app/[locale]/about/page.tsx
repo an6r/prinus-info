@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import '@/styles/about.scss';
 
-import maria_about from '../../public/photos/maria-prinus-about.jpg';
-import cats_about from '../../public/photos/cats-about.jpg';
+import maria_about from '../../../public/photos/maria-prinus-about.jpg';
+import cats_about from '../../../public/photos/cats-about.jpg';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
