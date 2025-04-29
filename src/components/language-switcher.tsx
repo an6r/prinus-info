@@ -52,7 +52,7 @@ export default function LanguageChanger() {
                     return (
                         <li key={key}>
                             <Link
-                                href={locale}
+                                href={'/' + locale}
                                 onClick={(e: MouseEvent) =>
                                     handleClick(e, locale)
                                 }
