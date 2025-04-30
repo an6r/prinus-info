@@ -56,21 +56,17 @@ export default async function Page({
         >
             <section className="contacts">
                 <h1>{t('contacts-title')}</h1>
-                <p className="introduction">
-                    I&apos;d love to hear from you — whether it&apos;s about a
-                    job opportunity, a genealogy mystery, or just to share cat
-                    photos 🐾. Feel free to reach out!
-                </p>
+                <p className="introduction">{t('contacts-intro')}</p>
                 <ul className="list-of-contacts">
                     <li className="email">
                         <Image
                             src="/icons8-email.png"
-                            alt="Email"
+                            alt={t('contacts-icons-email')}
                             width={40}
                             height={40}
                         />
                         <span>
-                            Email:{' '}
+                            {t('contacts-text-email')}:&nbsp;
                             <Link href="mailto:maria@prinus.info">
                                 maria@prinus.info
                             </Link>
@@ -79,12 +75,12 @@ export default async function Page({
                     <li className="linkedin">
                         <Image
                             src="/icons8-linkedin.png"
-                            alt="LinkedIn Logo"
+                            alt={t('contacts-icons-linkedin')}
                             width={40}
                             height={40}
                         />
                         <span>
-                            LinkedIn:{' '}
+                            LinkedIn:&nbsp;
                             <Link
                                 href="https://www.linkedin.com/in/mariaprinus/"
                                 target="_blank"
@@ -97,12 +93,12 @@ export default async function Page({
                     <li className="instagram">
                         <Image
                             src="/icons8-instagram.png"
-                            alt="Instagram Logo"
+                            alt={t('contacts-icons-instagram')}
                             width={40}
                             height={40}
                         />
                         <span>
-                            Instagram (personal):{' '}
+                            Instagram ({t('contacts-text-personal')}):&nbsp;
                             <Link
                                 href="https://www.instagram.com/an6r"
                                 target="_blank"
@@ -115,12 +111,12 @@ export default async function Page({
                     <li className="instagram cat">
                         <Image
                             src="/icons8-instagram.png"
-                            alt="Instagram Logo"
+                            alt={t('contacts-icons-instagram')}
                             width={40}
                             height={40}
                         />
                         <span>
-                            Instagram (cats):{' '}
+                            Instagram ({t('contacts-text-cats')}):&nbsp;
                             <Link
                                 href="https://www.instagram.com/linusandsophieandtoby/"
                                 target="_blank"
