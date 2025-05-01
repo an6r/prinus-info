@@ -36,7 +36,7 @@ function CompanyItem({
                 <div className="entry-header">
                     <h3>{title}</h3>
                     <span className="company-name">
-                        {company} – {location}
+                        <strong>{company}</strong> – {location}
                     </span>
                     <span className="duration">{duration}</span>
                 </div>

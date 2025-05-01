@@ -37,7 +37,11 @@ export default async function Page({
             <section className="resume-container">
                 <h1>{t('resume-title')}</h1>
                 <section className="resume-intro">
-                    <p className="introduction">{t('introduction')}</p>
+                    <div className="introduction">
+                        {Array.from(Array(4), (el, i) => {
+                            return <p key={i}>{t('introduction.p' + i)}</p>;
+                        })}
+                    </div>
                     <div className="pdf-download">
                         <Link
                             href="/documents/Maria+Prinus+Release+Manager.pdf"

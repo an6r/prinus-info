@@ -1,16 +1,16 @@
 [
   {
-    "title": "Senior Release Manager",
+    "title": "Старший менеджер по релизам",
     "company": "MongoDB",
     "company_logo": "mongodb-logo.png",
     "company_logo_height": 40,
-    "location": "Remote",
-    "duration": "Jun 2023 – Feb 2025",
+    "location": "Удаленно",
+    "duration": "июнь 2023 – февраль 2025",
     "bullets": [
-      "Collaborated with the Server Engineering team to manage regular releases for MongoDB versions, including current and legacy versions.",
-      "Improved internal release tools using Python to streamline releases and increase efficiency.",
-      "Assessed the priority and severity of issues found internally and reported by support teams, collaborating with engineers to ensure prompt resolutions and a stable release cycle.",
-      "Orchestrated collaborative sessions with DevOps teams to identify areas for improvement and established a feedback loop that fostered a culture of continuous improvement, ultimately enhancing team collaboration and release stability.",
+      "Сотрудничала с командой разработчиков серверных решений для координации регулярных релизов версий MongoDB, включая текущие и устаревшие версии.",
+      "Улучшала внутренние инструменты работы с релизами используя Python, что позволило оптимизировать качество выпускаемых версий и повысить эффективность.",
+      "Оценивала приоритет и серьезность проблем, обнаруженных как внутри компании, так и службами поддержки, сотрудничала с инженерами для обеспечения быстрого решения проблем и стабильного цикла релизов.",
+      "Организовывала совместные сессии с командами DevOps для выявления областей для улучшения и создал цикл обратной связи, который способствовал формированию культуры непрерывного совершенствования, в конечном итоге улучшая взаимодействие в команде и стабильность релизов.",
       "Coordinated with Cloud, Support, and SDET teams to maintain release quality.",
       "Facilitated the release of major product versions in 2023-2024.",
       "Maintained and optimized the release process, enforcing best engineering practices to improve engineering team performance.",
@@ -20,12 +20,12 @@
     ]
   },
   {
-    "title": "Release Manager",
+    "title": "Менеджер по релизам",
     "company": "Evernote",
     "company_logo": "evernote-logo.svg",
     "company_logo_height": 40,
-    "location": "Redwood City, CA",
-    "duration": "Feb 2018 – Feb 2023",
+    "location": "Редвуд Сити, Калифорния",
+    "duration": "февраль 2018 – февраль 2023",
     "bullets": [
       "Maintained in-depth knowledge of Evernote desktop, mobile, and web app, platform and tools.",
       "Predicted complexities and challenges to proactively work with internal and external stakeholders for mitigation.",
@@ -44,12 +44,12 @@
     ]
   },
   {
-    "title": "Lead Software Engineer",
+    "title": "Ведущий инженер-программист",
     "company": "EPAM Systems",
     "company_logo": "epam-logo.png",
     "company_logo_height": 40,
-    "location": "SF Bay Area, CA",
-    "duration": "Jan 2014 – Feb 2018",
+    "location": "Сан-Франциско, Калифорния",
+    "duration": "январь 2014 – февраль 2018",
     "bullets": [
       "Headed Global Assessment Committee and championed a training program to assist front-end departments in learning accessibility basics and best principles.",
       "Supervised, managed, and supported a team of senior-level software engineers, assuring work meets technical requirements and timely completion of projects for Goldman Sachs and Google.",
@@ -58,12 +58,12 @@
     ]
   },
   {
-    "title": "Senior Software Engineer",
+    "title": "Старший инженер-программист",
     "company": "EPAM Systems",
     "company_logo": "epam-logo.png",
     "company_logo_height": 40,
-    "location": "Minsk, Belarus",
-    "duration": "Jan 2011 – Feb 2014",
+    "location": "Минск, Беларусь",
+    "duration": "март 2011 – февраль 2014",
     "bullets": [
       "Led a team of on-site and off-site developers to implement projects for international clients such as NBC Universal, Sephora, TUI, OVUM, and The Cools.",
       "Represented EPAM management in meetings with client teams.",
@@ -75,14 +75,14 @@
     "company": "CIM.by",
     "company_logo": "icons8-company.png",
     "company_logo_height": 40,
-    "location": "Minsk, Belarus",
-    "duration": "Jul 2009 – Mar 2011",
+    "location": "Минск, Беларусь",
+    "duration": "июль 2009 – март 2011",
     "bullets": [
-      "Created pixel-perfect sites from scratch using HTML/CSS and Javascript.",
-      "Supported PHP-based Content Management System (CMS).",
-      "Managed content and products on the e-commerce sites.",
-      "Produced promotion articles and newsletters.",
-      "Improved site SEO and structure with development team collaboration."
+      "Создавал сайты с нуля, используя HTML/CSS и Javascript.",
+      "Поддерживала систему управления контентом (CMS) на базе PHP.",
+      "Отвечала за добавление и обновление контента и продуктов на сайты электронной коммерции.",
+      "Подготавливала рекламные статьи и информационные оповещения.",
+      "Улучшала SEO-оптимизацию и структуру сайтов с помощью команды разработчиков."
     ]
   }
 ]
