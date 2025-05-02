@@ -1,6 +1,6 @@
 {
-  "not-found-header": "Oops! Lost in Space?",
-  "not-found-text": "Looks like this page doesn&apos;t exist. Let&apos;s go home!",
-  "not-found-home-button": "Take Me Home",
-  "not-found-img-alt-text": "Sad Robot holding 404 sign"
+    "not-found-header": "Oops! Lost in Space?",
+    "not-found-text": "Looks like this page doesn&apos;t exist. Let&apos;s go home!",
+    "not-found-home-button": "Take Me Home",
+    "not-found-img-alt-text": "Sad Robot holding 404 sign"
 }

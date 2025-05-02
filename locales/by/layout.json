@@ -1,17 +1,17 @@
 {
-  "_header": "__Header",
-  "about-me": "Пра мяне",
-  "blog": "Блог",
-  "contacts": "Кантакты",
-  "hobbies": "Хоббі",
-  "home": "Галоўная",
-  "logo-alt": "Лагатып Prinus",
-  "resume": "Рэзюмэ",
+    "_header": "__Header",
+    "about-me": "Пра мяне",
+    "blog": "Блог",
+    "contacts": "Кантакты",
+    "hobbies": "Хоббі",
+    "home": "Галоўная",
+    "logo-alt": "Лагатып Prinus",
+    "resume": "Рэзюмэ",
 
-  "_footer": "__Footer",
-  "linkedin-logo": "Лагатып LinkedIn",
-  "instagram-logo": "Лагатып Instagram",
-  "instagram-logo-with-cat": "Лагатып Instagram з катом",
-  "copy": "Старонка створана Марыяй Прынус.",
-  "icons-by": "Значкі прадастаўлены"
+    "_footer": "__Footer",
+    "linkedin-logo": "Лагатып LinkedIn",
+    "instagram-logo": "Лагатып Instagram",
+    "instagram-logo-with-cat": "Лагатып Instagram з катом",
+    "copy": "Старонка створана Марыяй Прынус.",
+    "icons-by": "Значкі прадастаўлены"
 }

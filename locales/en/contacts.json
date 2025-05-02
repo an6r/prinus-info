@@ -1,13 +1,13 @@
 {
-  "_contacts": "__Contacts page",
-  "contacts-title": "Get in Touch",
-  "contacts-intro": "I'd love to hear from you — whether it's about a job opportunity, a genealogy mystery, or just to share cat photos \uD83D\uDC3E. Feel free to reach out!",
+    "_contacts": "__Contacts page",
+    "contacts-title": "Get in Touch",
+    "contacts-intro": "I'd love to hear from you — whether it's about a job opportunity, a genealogy mystery, or just to share cat photos \uD83D\uDC3E. Feel free to reach out!",
 
-  "contacts-text-email": "Email",
-  "contacts-text-personal": "personal",
-  "contacts-text-cats": "cats",
+    "contacts-text-email": "Email",
+    "contacts-text-personal": "personal",
+    "contacts-text-cats": "cats",
 
-  "contacts-icons-email": "Email icon",
-  "contacts-icons-linkedin": "LinkedIn logo",
-  "contacts-icons-instagram": "Instagram logo"
+    "contacts-icons-email": "Email icon",
+    "contacts-icons-linkedin": "LinkedIn logo",
+    "contacts-icons-instagram": "Instagram logo"
 }
