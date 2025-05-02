@@ -8,7 +8,6 @@ import Link from 'next/link';
 import LanguageChanger from './language-switcher';
 
 const jura = Jura({
-    preload: true,
     style: 'normal',
     subsets: ['latin'],
     weight: '600',
