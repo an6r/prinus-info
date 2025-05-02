@@ -88,14 +88,17 @@ nav {
 }
 
 .lang-switcher {
-    ul {
-        display: flex;
-        gap: 1rem;
-        list-style: none;
-    }
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+
     img {
         border-radius: 50%;
         box-shadow: inset -24px 1px rgba(0, 0, 0, 0.1);
+
+        &.active {
+            box-shadow: inset -24px 1px colors.$link-color;
+        }
     }
 }
 
