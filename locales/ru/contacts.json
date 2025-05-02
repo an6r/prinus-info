@@ -1,13 +1,13 @@
 {
-  "_contacts": "__Contacts page",
-  "contacts-title": "Давайте пообщаемся",
-  "contacts-intro": "Я с удовольствием пообщаюсь с вами на разные темы, будь то вакансия, генеалогический детектив или просто желание поделиться фотографиями котиков \uD83D\uDC3E. Не стесняйтесь обращаться!",
+    "_contacts": "__Contacts page",
+    "contacts-title": "Давайте пообщаемся",
+    "contacts-intro": "Я с удовольствием пообщаюсь с вами на разные темы, будь то вакансия, генеалогический детектив или просто желание поделиться фотографиями котиков \uD83D\uDC3E. Не стесняйтесь обращаться!",
 
-  "contacts-text-email": "Электронная почта",
-  "contacts-text-personal": "личный",
-  "contacts-text-cats": "котики",
+    "contacts-text-email": "Электронная почта",
+    "contacts-text-personal": "личный",
+    "contacts-text-cats": "котики",
 
-  "contacts-icons-email": "Иконка Email",
-  "contacts-icons-linkedin": "LinkedIn лого",
-  "contacts-icons-instagram": "Instagram лого"
+    "contacts-icons-email": "Иконка Email",
+    "contacts-icons-linkedin": "LinkedIn лого",
+    "contacts-icons-instagram": "Instagram лого"
 }
