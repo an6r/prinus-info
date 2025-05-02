@@ -10,13 +10,13 @@
       "Сотрудничала с командой разработчиков серверных решений для координации регулярных релизов версий MongoDB, включая текущие и устаревшие версии.",
       "Улучшала внутренние инструменты работы с релизами используя Python, что позволило оптимизировать качество выпускаемых версий и повысить эффективность.",
       "Оценивала приоритет и серьезность проблем, обнаруженных как внутри компании, так и службами поддержки, сотрудничала с инженерами для обеспечения быстрого решения проблем и стабильного цикла релизов.",
-      "Организовывала совместные сессии с командами DevOps для выявления областей для улучшения и создал цикл обратной связи, который способствовал формированию культуры непрерывного совершенствования, в конечном итоге улучшая взаимодействие в команде и стабильность релизов.",
-      "Coordinated with Cloud, Support, and SDET teams to maintain release quality.",
-      "Facilitated the release of major product versions in 2023-2024.",
-      "Maintained and optimized the release process, enforcing best engineering practices to improve engineering team performance.",
-      "Mentored a colleague to enhance Python skills, fostering team growth and technical knowledge.",
-      "Partnered with Engineering Directors and Technical Program Managers to ensure smooth and timely releases.",
-      "Conducted funnel interviews for new release team members and helped ramp up engineers joining the release team from other teams."
+      "Организовывала совместные сессии с командами DevOps для выявления областей для улучшения и создала цикл обратной связи, который способствовал формированию культуры непрерывного совершенствования, в итоге улучшив взаимодействие в команде и стабильность релизов.",
+      "Координировала работу с командами облачных вычислений, поддержки и SDET для улучшения качества релизов.",
+      "Участвовала в выпуске основных версий продукта в 2023–2024 годах.",
+      "Поддерживала и оптимизировала процесс релиза, внедряла передовые методы проектирования для повышения производительности работы команды инженеров.",
+      "Была наставником коллеги, помогая улучшить навыков работы с Python, способствуя росту команды и расширению технических знаний.",
+      "Сотрудничала с техническими директорами и менеджерами программ для обеспечения бесперебойных и своевременных релизов.",
+      "Проводила собеседования с новыми членами команды по релизам и помогала обучать инженеров из других команд, которые хотели присоединиться к команде по управлению релизами."
     ]
   },
   {
@@ -27,20 +27,20 @@
     "location": "Редвуд Сити, Калифорния",
     "duration": "февраль 2018 – февраль 2023",
     "bullets": [
-      "Maintained in-depth knowledge of Evernote desktop, mobile, and web app, platform and tools.",
-      "Predicted complexities and challenges to proactively work with internal and external stakeholders for mitigation.",
-      "Led end-to-end technical program management for complex, cross-functional projects involving web and mobile applications.",
-      "Advocated for new tools and processes to improve release stability and automation.",
-      "Utilized deep technical domain expertise to drive technical strategy, planning, and execution in partnership with engineering teams.",
-      "Introduced and supported Dogfooding, Beta, and General Audience release for different functional features in desktop and mobile applications.",
-      "Coordinated timely content delivery to market, ensuring high quality and transparency resulting in 70+ stable releases in 2021-2022.",
-      "Set metrics and dashboards to monitor and assess the quality and stability of the new software release to bring SLO to 99.5% from 97% before change.",
-      "Reduced the number of release rollbacks by 73% in 2022 by designing a bug prioritization matrix for the post cutover issues.",
-      "Aggregated team processes by analyzing bottlenecks and implementing agile methodology resulting  in a 30% reduction in product turnaround time.",
-      "Facilitated and maintained strong communication channels among cross-functional teams, ensuring efficient collaboration and timely resolution of issues.",
-      "Administered and evaluated product roadmaps to streamline and prioritize QA and technical support backlog tickets resulting in a 40% elimination of backlogged items.",
-      "Led Evernote’s desktop app accessibility requirements implementation as a Program Manager.",
-      "Managed a team of 10 onshore and offshore QAs in testing 8 software releases, ensuring timely delivery and minimal errors."
+      "Поддерживала актуальную базу знаний о компьютерных, мобильных и веб-приложениях Evernote, а также платформе и инструментах.",
+      "Прогнозировала риски и проблемы, проактивно сотрудничала с разными командами с целью смягчения возможных последствий.",
+      "Руководила комплексным управлением техническими программами для сложных кросс-функциональных проектов, включающих веб- и мобильные приложения.",
+      "Выступала за внедрение новых инструментов и процессов для повышения стабильности и автоматизации релизов.",
+      "Использовала глубокие технические знания для разработки технической стратегии, ее планирования и реализации в партнерстве с инженерными группами.",
+      "Внедряла и поддерживала ранеее тестирование (dogfooding), бета-версии и версии для широкой аудитории с различными функциональнами возможностям для компьтерных и мобильных приложений.",
+      "Координировала своевременное обновление контента, гарантирующее высокое качество и предсказуемость, что привело к выпуску более 70 стабильных релизов в 2021–2022 годах.",
+      "Определяла показатели и цели для мониторинга и оценки качества, а также стабильности новой версии программного обеспечения, что позволило довести SLO с 97% до 99,5%.",
+      "В 2022 году количество откатов релизов сократилось на 73% за счет разработки матрицы приоритетности ошибок для проблем, возникающих после перехода на новую версию.",
+      "Оптимизировала командные процессы путем анализа узких мест и внедрения Agile методологии, что привело к сокращению времени разработки новых фич на 30%.",
+      "Обеспечивала и поддерживала надежные каналы коммуникации между кросс-функциональными командами, обеспечивая эффективное сотрудничество и своевременное решение проблем.",
+      "Администрировала и оценивала дорожные карты продуктов для оптимизации и расстановки приоритетов в невыполненных задачах, которые были озвученны командой по контролю качества и технической поддержке, что привело к уменьшению количества невыполненных задач на 40%.",
+      "Руководила реализацией требований доступности (accessibility) компьютерного приложения Evernote в качестве менеджера программы.",
+      "Управляла командой из 10 специалистов по контролю качества при тестировании 8 версий программного обеспечения, обеспечивая своевременные релизы и минимальное количество ошибок."
     ]
   },
   {
@@ -51,10 +51,10 @@
     "location": "Сан-Франциско, Калифорния",
     "duration": "январь 2014 – февраль 2018",
     "bullets": [
-      "Headed Global Assessment Committee and championed a training program to assist front-end departments in learning accessibility basics and best principles.",
-      "Supervised, managed, and supported a team of senior-level software engineers, assuring work meets technical requirements and timely completion of projects for Goldman Sachs and Google.",
-      "Continuously monitored project progress and made adjustments as needed to ensure successful completion.",
-      "Designed an internal accessibility training program resulting in competence improvement of 70% across front-end departments."
+      "Возглавляла Глобальный комитет по оценке и инициировала программу обучения, призванную помочь фронт-энд командам в изучении основ и принципов обеспечения доступности (accessibility).",
+      "Руководила и поддерживала команды ведущих инженеров-программистов, обеспечивая соответствие результатов работы техническим требованиям, а также своевременное завершение проектов для Goldman Sachs и Google.",
+      "Отслеживала ход реализации проектов и вносила необходимые коррективы для обеспечения их успешного завершения.",
+      "Разработала внутреннюю программу обучения по доступности (accessibility), в результате чего компетенция в этой области сотрудников фронт-энд команд повысилась на 70%."
     ]
   },
   {
@@ -65,9 +65,9 @@
     "location": "Минск, Беларусь",
     "duration": "март 2011 – февраль 2014",
     "bullets": [
-      "Led a team of on-site and off-site developers to implement projects for international clients such as NBC Universal, Sephora, TUI, OVUM, and The Cools.",
-      "Represented EPAM management in meetings with client teams.",
-      "Became SME on best practices for the web development available. Collaborated with the UX design team to examine the existing projects to identify errors in markup, styles, and color schema."
+      "Управляла командой разработчиков, работавших как внутри компании, так и в других странах, и реализовывали проекты для международных клиентов, таких как NBC Universal, Sephora, TUI, OVUM и TheCools.",
+      "Представляла EPAM на встречах с командами клиентов.",
+      "Стала экспертом по лучшим практикам веб-разработки. Сотрудничала с командой UX-дизайнеров, чтобы изучить существующие проекты и выявить ошибки в разметке, стилях и цветовой схеме."
     ]
   },
   {
