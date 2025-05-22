@@ -2,32 +2,10 @@
 
 import Image from 'next/image';
 
+import type { AboutContentData } from '@/app/types';
+
 import maria_about from '@/public/photos/maria-prinus-about.jpg';
 import cats_about from '@/public/photos/cats-about.jpg';
-
-interface AboutContentData {
-    introduction: {
-        header: string;
-        text: Array<string>;
-    };
-    experience: {
-        header: string;
-        text: Array<string>;
-    };
-    personal: {
-        header: string;
-        text: Array<string>;
-    };
-    site: {
-        header: string;
-        text: Array<string>;
-        special: {
-            p0: string;
-            p1: string;
-            p2: string;
-        };
-    };
-}
 
 function TextBlock({
     header,
