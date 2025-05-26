@@ -21,6 +21,10 @@ a {
     }
 }
 
+p {
+    padding-bottom: 1rem;
+}
+
 h1 {
     font-size: 2.5rem;
     color: colors.$header-color;
@@ -83,6 +87,21 @@ nav {
     }
 }
 
+.lang-switcher {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+
+    img {
+        border-radius: 50%;
+        box-shadow: inset -24px 1px rgba(0, 0, 0, 0.1);
+
+        &.active {
+            box-shadow: inset -24px 1px colors.$link-color;
+        }
+    }
+}
+
 .main-section {
     width: 100%;
     padding: 0 2rem;
@@ -110,7 +129,7 @@ nav {
 
     p {
         font-size: 1.2rem;
-        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 }
 
