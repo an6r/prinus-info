@@ -23,7 +23,7 @@
         "react-i18next": "^15.5.1"
     },
     "devDependencies": {
-        "@aws-amplify/backend": "^1.14.3",
+        "@aws-amplify/backend": "^1.16.1",
         "@aws-amplify/backend-cli": "^1.6.0",
         "@eslint/eslintrc": "^3",
         "@types/node": "^20",
