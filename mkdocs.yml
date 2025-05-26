@@ -1,0 +1,9 @@
+site_name: Prinus.info Site Documentation
+site_url: https://prinus.info
+theme:
+  name: material
+  palette:
+    primary: purple
+  icon:
+    logo: fontawesome/solid/p
+  favicon: app/favicon.ico
