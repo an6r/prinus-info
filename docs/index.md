@@ -1,17 +1,10 @@
-# Welcome to MkDocs
+# Welcome to Prinus.info Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+You can see the result site on [prinus.info](https://prinus.info).
 
-## Commands
+## Description
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+These pages are dedicated to any mutual work I'm planning to do on my web-site project. If I sharedc these pages with 
+you most likely I invite you to join my project and support it by any means.
 
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
