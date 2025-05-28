@@ -1,11 +1,12 @@
-import { downloadData } from 'aws-amplify/storage';
-
 import type { Metadata } from 'next';
 
 import initTranslations from '@/app/i18n';
+import { fetchLocaleJsonFromS3 } from '@/utils/s3';
 
 import AboutContent from '@/components/about-content';
 import TranslationsProvider from '@/components/translations-provider';
+
+import { AboutContentData } from '@/app/types';
 
 import '@/styles/about.scss';
 
@@ -23,16 +24,10 @@ export default async function Page({
 }) {
     const { locale } = await params;
     const { t, resources } = await initTranslations(locale, i18nNamespaces);
-
-    let data = null;
-    try {
-        const downloadResult = await downloadData({
-            path: `pages/about-me/${locale}/page.json`,
-        }).result;
-        data = await downloadResult.body.json();
-    } catch (error) {
-        console.log('Error : ', error);
-    }
+    const data: AboutContentData = await fetchLocaleJsonFromS3(
+        locale,
+        'about-me'
+    );
 
     return (
         <TranslationsProvider

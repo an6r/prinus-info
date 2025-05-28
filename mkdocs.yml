@@ -1,0 +1,48 @@
+# Project information
+site_name: Prinus.info Site Documentation
+site_url: https://prinus.info
+site_author: Maria Prinus
+
+# Repository
+repo_name: an6r/prinus-info
+repo_url: https://github.com/an6r/prinus-info/
+
+# Copyright
+copyright: Copyright &copy; 2025 Maria Prinus
+
+theme:
+  name: material
+  features:
+    - navigation.footer
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+  palette:
+    primary: purple
+  icon:
+    logo: fontawesome/solid/p
+
+# Extensions
+markdown_extensions:
+  - tables
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+extra:
+  status:
+    new: Recently added
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/an6r
+
+# Page tree
+nav:
+  - Home: index.md
+  - Design:
+      - Supported Devices and Browsers Matrix: design/supported-res.md
