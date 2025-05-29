@@ -1,3 +1,11 @@
+import i18nConfig from '@/i18nConfig';
+
+export type LocaleType = (typeof i18nConfig.locales)[number];
+
+export interface PageProps {
+    params: Promise<{ locale: LocaleType }>;
+}
+
 export interface AboutContentData {
     introduction: {
         header: string;
@@ -20,4 +28,15 @@ export interface AboutContentData {
             p2: string;
         };
     };
+}
+
+export interface CompanyItemProps {
+    title: string;
+    company: string;
+    location: string;
+    duration: string;
+    company_logo: string;
+    company_logo_height: number;
+    bullets?: Array<string>;
+    key?: number;
 }

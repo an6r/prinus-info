@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { CompanyItemProps } from '@/app/types';
 
 function CompanyItem({
     title,
@@ -9,16 +10,8 @@ function CompanyItem({
     duration,
     company_logo,
     company_logo_height,
-    bullets,
-}: {
-    title: string;
-    company: string;
-    location: string;
-    duration: string;
-    company_logo: string;
-    company_logo_height: number;
-    bullets: Array<string>;
-}) {
+    bullets = [],
+}: CompanyItemProps) {
     const clogo = '/companies/' + company_logo;
 
     return (

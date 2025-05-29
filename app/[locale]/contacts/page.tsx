@@ -3,15 +3,13 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 import initTranslations from '@/app/i18n';
+import { PageProps } from '@/app/types';
+
+import { createMetadata } from '@/utils/metadata';
 
 import TranslationsProvider from '@/components/translations-provider';
 
 import '@/styles/contacts.scss';
-
-export const metadata: Metadata = {
-    title: 'Contact Maria Prinus',
-    description: 'Reach out to Maria Prinus',
-};
 
 const i18nNamespaces = ['contacts'];
 
@@ -40,11 +38,21 @@ const i18nNamespaces = ['contacts'];
     );
 };*/
 
-export default async function Page({
+export async function generateMetadata({
     params,
-}: {
-    params: Promise<{ locale: string }>;
-}) {
+}: PageProps): Promise<Metadata> {
+    const { locale } = await params;
+    const { t } = await initTranslations(locale, i18nNamespaces);
+
+    return createMetadata({
+        title: t('meta-title'),
+        description: t('meta-description'),
+        keywords: t('meta-keywords'),
+        locale,
+    });
+}
+
+export default async function Page({ params }: PageProps) {
     const { locale } = await params;
     const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
