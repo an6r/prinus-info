@@ -1,3 +1,11 @@
+import i18nConfig from '@/i18nConfig';
+
+export type LocaleType = (typeof i18nConfig.locales)[number];
+
+export interface PageProps {
+    params: Promise<{ locale: LocaleType }>;
+}
+
 export interface AboutContentData {
     introduction: {
         header: string;
