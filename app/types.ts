@@ -29,3 +29,14 @@ export interface AboutContentData {
         };
     };
 }
+
+export interface CompanyItemProps {
+    title: string;
+    company: string;
+    location: string;
+    duration: string;
+    company_logo: string;
+    company_logo_height: number;
+    bullets?: Array<string>;
+    key?: number;
+}
