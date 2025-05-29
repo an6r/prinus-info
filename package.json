@@ -1,6 +1,6 @@
 {
     "name": "prinus-info",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "private": true,
     "type": "module",
     "scripts": {
@@ -24,14 +24,14 @@
         "react-i18next": "^15.5.1"
     },
     "devDependencies": {
-        "@aws-amplify/backend": "^1.14.3",
+        "@aws-amplify/backend": "^1.16.1",
         "@aws-amplify/backend-cli": "^1.6.0",
         "@eslint/eslintrc": "^3",
         "@types/node": "^20",
         "@types/react": "^18",
         "@types/react-dom": "^18",
-        "aws-cdk": "^2.1012.0",
-        "aws-cdk-lib": "^2.191.0",
+        "aws-cdk": "^2.1017.0",
+        "aws-cdk-lib": "^2.199.0",
         "eslint": "^9",
         "eslint-config-next": "15.3.1",
         "eslint-config-prettier": "^10.1.2",
