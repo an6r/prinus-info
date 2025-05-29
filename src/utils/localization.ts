@@ -1,4 +1,5 @@
 import i18nConfig from '@/i18nConfig';
+import { LocaleType } from '@/app/types';
 
 type LocaleConfig = {
     cookieName: string;
@@ -10,7 +11,7 @@ const localeConfig: LocaleConfig = {
     cookieExpireDays: 30,
 };
 
-const setLocaleCookie = (locale: string) => {
+const setLocaleCookie = (locale: LocaleType) => {
     const date = new Date();
     date.setTime(
         date.getTime() + localeConfig.cookieExpireDays * 24 * 60 * 60 * 1000
@@ -20,8 +21,8 @@ const setLocaleCookie = (locale: string) => {
 
 const getLocalizedPath = (
     currentPathname: string,
-    currentLocale: string,
-    newLocale: string
+    currentLocale: LocaleType,
+    newLocale: LocaleType
 ): string => {
     if (currentLocale === i18nConfig.defaultLocale) {
         return `/${newLocale}${currentPathname}`;

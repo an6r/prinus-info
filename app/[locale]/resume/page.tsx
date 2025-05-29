@@ -2,27 +2,34 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
-import '@/styles/resume.scss';
-
+import { CompanyItemProps, PageProps } from '@/app/types';
 import initTranslations from '@/app/i18n';
 import { getEducation, getWorkExperience } from '@/app/experience';
+
+import { createMetadata } from '@/utils/metadata';
 
 import CompanyItem from '@/components/company-item';
 import TranslationsProvider from '@/components/translations-provider';
 
-export const metadata: Metadata = {
-    title: 'Resume of Maria Prinus',
-    description:
-        'This page contains details about Maria Prinus employment and education',
-};
+import '@/styles/resume.scss';
 
 const i18nNamespaces = ['timeline'];
 
-export default async function Page({
+export async function generateMetadata({
     params,
-}: {
-    params: Promise<{ locale: 'en' | 'by' | 'ru' }>;
-}) {
+}: PageProps): Promise<Metadata> {
+    const { locale } = await params;
+    const { t } = await initTranslations(locale, i18nNamespaces);
+
+    return createMetadata({
+        title: t('meta-title'),
+        description: t('meta-description'),
+        keywords: t('meta-keywords'),
+        locale,
+    });
+}
+
+export default async function Page({ params }: PageProps) {
     const { locale } = await params;
     const { t, resources } = await initTranslations(locale, i18nNamespaces);
     const resumeData = await getWorkExperience(locale);
@@ -60,7 +67,7 @@ export default async function Page({
                 </section>
 
                 <h2>{t('header-work-experience')}</h2>
-                {resumeData.map((entry, key) => (
+                {resumeData.map((entry: CompanyItemProps, key: number) => (
                     <CompanyItem {...entry} key={key} />
                 ))}
 
