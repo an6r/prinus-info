@@ -1,6 +1,11 @@
+'use client';
+
+import { useTranslation } from 'react-i18next';
+
 import { Jura } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
+import LanguageChanger from './language-switcher';
 
 const jura = Jura({
     preload: true,
@@ -10,37 +15,40 @@ const jura = Jura({
 });
 
 function Header() {
+    const { t } = useTranslation();
+
     return (
         <header>
             <div className={jura.className + ' logo'}>
                 <Link href="/" className="logo-text">
                     <Image
                         src="/robot.png"
-                        alt="Prinus Logo"
+                        alt={t('logo-alt')}
                         width={120}
                         height={120}
                     />
                     <span>Prinus</span>
                 </Link>
             </div>
-            <nav>
+            <nav className="nav" role="navigation" aria-label="Main">
                 <ul>
                     <li>
-                        <Link href="/">Home</Link>
+                        <Link href="/">{t('home')}</Link>
                     </li>
                     <li>
-                        <Link href="/about">About Me</Link>
+                        <Link href="/about">{t('about-me')}</Link>
                     </li>
                     <li>
-                        <Link href="/resume">Resume</Link>
+                        <Link href="/resume">{t('resume')}</Link>
                     </li>
-                    {/*<li><Link href="/blog">Blog</NavLink></li>
-                    <li><Link href="/hobbies">Hobbies</NavLink></li>*/}
+                    {/*<li><Link href="/blog">{t('blog')}</Link></li>
+                    <li><Link href="/hobbies">{t('hobbies')}</Link></li>*/}
                     <li>
-                        <Link href="/contacts">Contacts</Link>
+                        <Link href="/contacts">{t('contacts')}</Link>
                     </li>
                 </ul>
             </nav>
+            <LanguageChanger />
         </header>
     );
 }

@@ -1,0 +1,13 @@
+{
+    "_hero": "__Hero component",
+    "photo": "Photo of Maria Prinus",
+    "greeting": "Hi, I’m Maria Prinus",
+    "greeting-text": "Software engineer turned release manager, lover of cats, history, and beautiful code.",
+    "resume-button": "View My Resume",
+    "contacts-button": "Get in Touch",
+
+    "_metaData": "__Metadata",
+    "meta-title": "Personal Site of Maria Prinus",
+    "meta-description": "Personal Site of Maria Prinus",
+    "meta-keywords": "Maria Prinus"
+}

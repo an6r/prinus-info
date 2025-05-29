@@ -1,7 +1,13 @@
+'use client';
+
+import { useTranslation } from 'react-i18next';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
 function Footer() {
+    const { t } = useTranslation();
+
     return (
         <footer>
             <div className="social">
@@ -11,7 +17,7 @@ function Footer() {
                 >
                     <Image
                         src="/linkedin.svg"
-                        alt="LinkedIn Logo"
+                        alt={t('linkedin-logo')}
                         width={64}
                         height={64}
                     />
@@ -19,7 +25,7 @@ function Footer() {
                 <Link href="https://www.instagram.com/an6r/" target="_blank">
                     <Image
                         src="/insta.svg"
-                        alt="Instagram Logo"
+                        alt={t('instagram-logo')}
                         width={64}
                         height={64}
                     />
@@ -31,15 +37,15 @@ function Footer() {
                 >
                     <Image
                         src="/insta.svg"
-                        alt="Instagram Logo with Cat"
+                        alt={t('instagram-logo-with-cat')}
                         width={64}
                         height={64}
                     />
                 </Link>
             </div>
-            <p>&copy; 2025 Site created by Maria Prinus.</p>
+            <p>&copy; 2025 {t('copy')}</p>
             <p>
-                Icons provided by{' '}
+                {t('icons-by')}&nbsp;
                 <Link href="https://icons8.com/" target="_blank">
                     Icon8
                 </Link>

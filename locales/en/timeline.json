@@ -1,0 +1,19 @@
+{
+    "_resume-timeline": "__Resume page",
+    "resume-title": "Resume",
+    "image-download-resume": "Download PDF",
+    "text-download-resume": "Download my resume",
+    "header-work-experience": "Professional Experience",
+    "header-education": "Education",
+    "introduction": {
+        "p0": "With over 15 years of experience in software engineering and release management, I am skilled in leading cross-functional teams and resolving complex issues.",
+        "p1": "My journey began with a Master’s degree in Computer Systems & Networks from the Belarusian State University of Informatics and Radioelectronics, which laid the foundation for my technical expertise.",
+        "p2": "Later at EPAM Systems, I led teams to deliver projects for global clients, enhancing my leadership and project management skills. My role as a Senior Release Manager at MongoDB allowed me to collaborate with diverse teams to streamline release processes and improve efficiency.",
+        "p3": "I take pride in mentoring colleagues, fostering a culture of continuous improvement, and achieving significant reductions in release rollbacks. My passion lies in applying my expertise to support both startup and enterprise application development. I am eager to share my knowledge and experience to inspire and guide others in their professional journeys."
+    },
+
+    "_metaData": "__Metadata",
+    "meta-title": "Resume of Maria Prinus",
+    "meta-description": "This page contains details about Maria Prinus employment and education",
+    "meta-keywords": "Maria Prinus, education, experience, release manager, technical program manager"
+}
