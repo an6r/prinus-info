@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
-import { PageProps } from '@/app/types';
+import { CompanyItemProps, PageProps } from '@/app/types';
 import initTranslations from '@/app/i18n';
 import { getEducation, getWorkExperience } from '@/app/experience';
 
@@ -67,7 +67,7 @@ export default async function Page({ params }: PageProps) {
                 </section>
 
                 <h2>{t('header-work-experience')}</h2>
-                {resumeData.map((entry, key) => (
+                {resumeData.map((entry: CompanyItemProps, key: number) => (
                     <CompanyItem {...entry} key={key} />
                 ))}
 

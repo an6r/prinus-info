@@ -1,11 +1,8 @@
 import 'server-only';
 
-import { LocaleType } from '@/app/types';
+import { CompanyItemProps, LocaleType } from '@/app/types';
 
-const workExperienceData: Record<
-    LocaleType,
-    () => Promise<Record<string, unknown>[]>
-> = {
+const workExperienceData = {
     en: () =>
         import('../locales/en/work-experience.json').then(
             (module) => module.default
@@ -20,13 +17,16 @@ const workExperienceData: Record<
         ),
 };
 
-export const getWorkExperience = async (locale: LocaleType) =>
-    workExperienceData[locale]();
+export async function getWorkExperience(locale: LocaleType) {
+    return (
+        workExperienceData as Record<
+            LocaleType,
+            () => Promise<CompanyItemProps[]>
+        >
+    )[locale]();
+}
 
-const educationData: Record<
-    LocaleType,
-    () => Promise<Record<string, unknown>>
-> = {
+const educationData = {
     en: () =>
         import('../locales/en/education.json').then((module) => module.default),
     by: () =>
@@ -36,4 +36,6 @@ const educationData: Record<
 };
 
 export const getEducation = async (locale: LocaleType) =>
-    educationData[locale]();
+    (educationData as Record<LocaleType, () => Promise<CompanyItemProps>>)[
+        locale
+    ]();

@@ -9,7 +9,7 @@
         "start": "next start",
         "lint": "next lint",
         "prettier": "npx prettier . --check",
-        "prettier:fix": "npx prettier . --write"
+        "prettier:format": "npx prettier . --write"
     },
     "dependencies": {
         "@aws-amplify/ui-react": "^6.11.1",
