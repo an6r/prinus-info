@@ -12,7 +12,7 @@
         "prettier:format": "npx prettier . --write"
     },
     "dependencies": {
-        "@aws-amplify/ui-react": "^6.11.1",
+        "@aws-amplify/ui-react": "^6.11.2",
         "@aws-sdk/client-s3": "^3.817.0",
         "aws-amplify": "^6.15.0",
         "i18next": "^25.2.1",
@@ -25,7 +25,7 @@
     },
     "devDependencies": {
         "@aws-amplify/backend": "^1.16.1",
-        "@aws-amplify/backend-cli": "^1.6.0",
+        "@aws-amplify/backend-cli": "^1.7.2",
         "@eslint/eslintrc": "^3",
         "@types/node": "^20",
         "@types/react": "^18",
