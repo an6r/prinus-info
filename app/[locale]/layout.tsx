@@ -1,5 +1,6 @@
 // @ts-check
 import { Amplify } from 'aws-amplify';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 import '@/styles/main.scss';
 
@@ -46,6 +47,7 @@ export default async function RootLayout({
                     </TranslationsProvider>
                 </div>
             </body>
+            <GoogleAnalytics gaId={process.env.PRINUS_GOOGLE_TAG as string} />
         </html>
     );
 }
