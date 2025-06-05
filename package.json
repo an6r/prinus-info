@@ -1,6 +1,6 @@
 {
     "name": "prinus-info",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "private": true,
     "type": "module",
     "scripts": {
@@ -12,12 +12,13 @@
         "prettier:format": "npx prettier . --write"
     },
     "dependencies": {
-        "@aws-amplify/ui-react": "^6.11.1",
+        "@aws-amplify/ui-react": "^6.11.2",
         "@aws-sdk/client-s3": "^3.817.0",
+        "@next/third-parties": "^15.3.3",
         "aws-amplify": "^6.15.0",
         "i18next": "^25.2.1",
         "i18next-resources-to-backend": "^1.2.1",
-        "next": "15.3.1",
+        "next": "15.3.3",
         "next-i18n-router": "^5.5.2",
         "react": "^18",
         "react-dom": "^18",
@@ -25,7 +26,7 @@
     },
     "devDependencies": {
         "@aws-amplify/backend": "^1.16.1",
-        "@aws-amplify/backend-cli": "^1.6.0",
+        "@aws-amplify/backend-cli": "^1.7.2",
         "@eslint/eslintrc": "^3",
         "@types/node": "^20",
         "@types/react": "^18",
@@ -37,7 +38,7 @@
         "eslint-config-prettier": "^10.1.2",
         "prettier": "^3.5.3",
         "sass": "^1.89.0",
-        "tsx": "^4.19.3",
+        "tsx": "^4.19.4",
         "typescript": "^5"
     },
     "engines": {
