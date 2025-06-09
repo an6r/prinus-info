@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import Link from 'next/link';
 
-function Navigation() {
+function Menu() {
     const { t } = useTranslation();
 
     return (
@@ -27,4 +27,4 @@ function Navigation() {
     );
 }
 
-export default Navigation;
+export default Menu;

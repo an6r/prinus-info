@@ -1,35 +1,36 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 h1 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .logo {
-  .logo-text {
-    font-size: 5rem;
-    font-optical-sizing: auto;
-  }
+    .logo-text {
+        font-size: 5rem;
+        font-optical-sizing: auto;
+    }
 }
 
 nav {
-  a {
-    font-weight: 500;
-  }
+    a {
+        font-weight: 500;
+    }
 }
 
 footer {
-  .social a {
-    font-size: 1.2rem;
-  }
+    .social a {
+        font-size: 1.2rem;
+    }
 }
