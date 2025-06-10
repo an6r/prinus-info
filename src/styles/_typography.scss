@@ -10,6 +10,7 @@ a {
 
 h1 {
     font-size: 2.5rem;
+    line-height: 1.3;
 }
 
 h2 {
@@ -27,6 +28,11 @@ nav {
     a {
         font-weight: 500;
     }
+}
+
+.list-of-contacts {
+    font-size: 1.5rem;
+    line-height: 3rem;
 }
 
 footer {
