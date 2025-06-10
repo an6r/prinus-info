@@ -1,5 +1,4 @@
 // @ts-check
-import { Amplify } from 'aws-amplify';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 import '@/styles/main.scss';
