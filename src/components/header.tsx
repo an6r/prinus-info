@@ -1,11 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { Jura } from 'next/font/google';
+
 import Link from 'next/link';
 import Image from 'next/image';
-
-import { usePathname } from 'next/navigation';
 
 import LanguageChanger from '@/components/language-switcher';
 import Menu from '@/components/menu';

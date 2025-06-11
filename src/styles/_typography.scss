@@ -21,6 +21,14 @@ h2 {
     .logo-text {
         font-size: 5rem;
         font-optical-sizing: auto;
+        line-height: 1;
+    }
+
+    /* Desktop */
+    @media (min-width: 1024px) {
+        .logo-text {
+            font-size: 6rem;
+        }
     }
 }
 

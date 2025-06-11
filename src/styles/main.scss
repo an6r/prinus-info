@@ -70,10 +70,18 @@ h2 {
 
 .intro {
     max-width: 500px;
+    text-align: center;
 
     p {
         font-size: 1.2rem;
         padding-bottom: 1.5rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .intro {
+        text-align: left;
     }
 }
 
@@ -82,14 +90,14 @@ h2 {
 }
 
 .btn.secondary {
-    @include mixins.secondary-button;
+    @include mixins.button(colors.$secondary-button-color);
 }
 
 /* Footer */
 footer {
     width: 100%;
     background-color: colors.$bg-color;
-    padding: 2rem;
+    padding: 2rem 0;
     text-align: center;
     border-top: 1px solid #eee;
 
