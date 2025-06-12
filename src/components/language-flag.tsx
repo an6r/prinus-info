@@ -38,16 +38,13 @@ const LanguageFlag = ({ locale }: { locale: LocaleType }) => {
 
     return (
         <Link
+            className={
+                'language-flag ' + (locale === currentLocale ? 'active' : '')
+            }
             href={`/${locale}`}
             onClick={(e) => handleLanguageChange(e, locale)}
         >
-            <Image
-                className={locale === currentLocale ? 'active' : ''}
-                src={src}
-                alt={alt}
-                width={24}
-                height={24}
-            />
+            <Image src={src} alt={alt} width={32} height={32} />
         </Link>
     );
 };

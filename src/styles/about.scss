@@ -1,8 +1,22 @@
+.about-page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
 .text-image-container {
     display: flex;
     gap: 2rem;
-    margin-bottom: 2rem;
     align-items: center;
+    flex-direction: column;
 
     .image {
         flex-grow: 1;

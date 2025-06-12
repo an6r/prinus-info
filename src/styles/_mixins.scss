@@ -1,20 +1,40 @@
 @use 'colors';
+@use 'sass:color';
 
-@mixin button {
+@mixin buttonBase {
+    cursor: pointer;
     padding: 0.75rem 1.5rem;
-    background-color: colors.$button-color;
-    color: colors.$button-text-color;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    transition:
+        background-color 0.3s ease-out,
+        color 0.3s ease-out;
+}
 
-    &:hover {
-        background-color: colors.$button-hover-color;
-        color: colors.$button-text-color;
-        cursor: pointer;
+@mixin button(
+    $bgColor: colors.$button-color,
+    $textColor: colors.$button-text-color
+) {
+    @include buttonBase;
+    background-color: $bgColor;
+    color: $textColor;
+
+    &:hover,
+    &.active {
+        background-color: color.scale($bgColor, $lightness: -30%);
+        color: $textColor;
     }
 }
 
-@mixin secondary-button {
-    @include button;
-    background-color: colors.$secondary-button-color;
+@mixin borderedButton($borderColor) {
+    @include buttonBase;
+    border-color: color.scale($borderColor, $lightness: 50%);
+    border-style: solid;
+    border-width: 2px;
+
+    &:hover,
+    &.active {
+        background-color: $borderColor;
+        border-color: $borderColor;
+        color: colors.$button-text-color;
+    }
 }

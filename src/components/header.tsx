@@ -1,11 +1,14 @@
 'use client';
 
-import { useTranslation } from 'react-i18next';
-
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { Jura } from 'next/font/google';
-import Image from 'next/image';
+
 import Link from 'next/link';
-import LanguageChanger from './language-switcher';
+import Image from 'next/image';
+
+import LanguageChanger from '@/components/language-switcher';
+import Menu from '@/components/menu';
 
 const jura = Jura({
     preload: true,
@@ -15,40 +18,51 @@ const jura = Jura({
 });
 
 function Header() {
-    const { t } = useTranslation();
+    const pathname = usePathname();
+    const [isToggled, setIsToggled] = useState(false);
+
+    const menuToggle = () => {
+        setIsToggled(!isToggled);
+    };
+
+    useEffect(() => {
+        setIsToggled(false);
+    }, [pathname]);
 
     return (
         <header>
             <div className={jura.className + ' logo'}>
                 <Link href="/" className="logo-text">
-                    <Image
-                        src="/robot.png"
-                        alt={t('logo-alt')}
-                        width={120}
-                        height={120}
-                    />
-                    <span>Prinus</span>
+                    Prinus
                 </Link>
             </div>
-            <nav className="nav" role="navigation" aria-label="Main">
-                <ul>
-                    <li>
-                        <Link href="/">{t('home')}</Link>
-                    </li>
-                    <li>
-                        <Link href="/about">{t('about-me')}</Link>
-                    </li>
-                    <li>
-                        <Link href="/resume">{t('resume')}</Link>
-                    </li>
-                    {/*<li><Link href="/blog">{t('blog')}</Link></li>
-                    <li><Link href="/hobbies">{t('hobbies')}</Link></li>*/}
-                    <li>
-                        <Link href="/contacts">{t('contacts')}</Link>
-                    </li>
-                </ul>
-            </nav>
-            <LanguageChanger />
+            <section
+                className={
+                    'navigation-section ' +
+                    (isToggled ? 'section-is-opened' : 'section-is-closed')
+                }
+            >
+                <div className="opener" onClick={menuToggle}>
+                    <Image
+                        className="menu-icon"
+                        src="/icons8-menu.png"
+                        width={42}
+                        height={42}
+                        alt="menu"
+                    />
+                    <Image
+                        className="close-icon"
+                        src="/icons8-close.png"
+                        width={42}
+                        height={42}
+                        alt="menu"
+                    />
+                </div>
+                <div className="navigation">
+                    <Menu />
+                    <LanguageChanger />
+                </div>
+            </section>
         </header>
     );
 }
