@@ -5,7 +5,6 @@ backend:
             commands:
                 - nvm install 22
                 - npm install @parcel/watcher-linux-x64-glibc
-                - npm install
         build:
             commands:
                 - nvm use
