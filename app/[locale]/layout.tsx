@@ -1,8 +1,8 @@
 // @ts-check
-import { Amplify } from 'aws-amplify';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 import '@/styles/main.scss';
+import '@/styles/header.scss';
 
 import TranslationsProvider from '@/components/translations-provider';
 import Header from '@/components/header';
@@ -10,11 +10,7 @@ import Footer from '@/components/footer';
 
 import i18nConfig from '@/i18nConfig';
 
-import outputs from '@/amplify_outputs.json';
-
 import initTranslations from '../i18n';
-
-Amplify.configure(outputs);
 
 export function generateStaticParams() {
     return i18nConfig.locales.map((locale) => ({ locale }));

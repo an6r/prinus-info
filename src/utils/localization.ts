@@ -30,4 +30,22 @@ const getLocalizedPath = (
     return currentPathname.replace(`/${currentLocale}`, `/${newLocale}`);
 };
 
-export { setLocaleCookie, getLocalizedPath };
+const isActiveMenuItem = (
+    linkHref: string,
+    currentPathname: string,
+    currentLocale?: LocaleType
+): boolean => {
+    if (currentLocale === i18nConfig.defaultLocale) {
+        return linkHref === currentPathname;
+    } else if (currentLocale !== i18nConfig.defaultLocale) {
+        if (linkHref === '/' && currentPathname === `/${currentLocale}`) {
+            return true;
+        }
+
+        return `/${currentLocale}${linkHref}` === currentPathname;
+    }
+
+    return false;
+};
+
+export { setLocaleCookie, getLocalizedPath, isActiveMenuItem };

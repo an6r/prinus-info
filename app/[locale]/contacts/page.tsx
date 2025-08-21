@@ -62,7 +62,7 @@ export default async function Page({ params }: PageProps) {
             locale={locale}
             resources={resources}
         >
-            <section className="contacts">
+            <section className="contacts-container">
                 <h1>{t('contacts-title')}</h1>
                 <p className="introduction">{t('contacts-intro')}</p>
                 <ul className="list-of-contacts">
@@ -73,12 +73,12 @@ export default async function Page({ params }: PageProps) {
                             width={40}
                             height={40}
                         />
-                        <span>
-                            {t('contacts-text-email')}:&nbsp;
-                            <Link href="mailto:maria@prinus.info">
-                                maria@prinus.info
-                            </Link>
-                        </span>
+                        <span>{t('contacts-text-email')}:</span>
+                    </li>
+                    <li>
+                        <Link href="mailto:maria@prinus.info">
+                            maria@prinus.info
+                        </Link>
                     </li>
                     <li className="linkedin">
                         <Image
@@ -87,16 +87,16 @@ export default async function Page({ params }: PageProps) {
                             width={40}
                             height={40}
                         />
-                        <span>
-                            LinkedIn:&nbsp;
-                            <Link
-                                href="https://www.linkedin.com/in/mariaprinus/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                linkedin.com/in/mariaprinus
-                            </Link>
-                        </span>
+                        <span>LinkedIn:</span>
+                    </li>
+                    <li>
+                        <Link
+                            href="https://www.linkedin.com/in/mariaprinus/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            linkedin.com/in/mariaprinus
+                        </Link>
                     </li>
                     <li className="instagram">
                         <Image
@@ -105,16 +105,16 @@ export default async function Page({ params }: PageProps) {
                             width={40}
                             height={40}
                         />
-                        <span>
-                            Instagram ({t('contacts-text-personal')}):&nbsp;
-                            <Link
-                                href="https://www.instagram.com/an6r"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                @an6r
-                            </Link>
-                        </span>
+                        <span>Instagram ({t('contacts-text-personal')}):</span>
+                    </li>
+                    <li>
+                        <Link
+                            href="https://www.instagram.com/an6r"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            @an6r
+                        </Link>
                     </li>
                     <li className="instagram cat">
                         <Image
@@ -123,16 +123,16 @@ export default async function Page({ params }: PageProps) {
                             width={40}
                             height={40}
                         />
-                        <span>
-                            Instagram ({t('contacts-text-cats')}):&nbsp;
-                            <Link
-                                href="https://www.instagram.com/linusandsophieandtoby/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                @linusandsophieandtoby
-                            </Link>
-                        </span>
+                        <span>Instagram ({t('contacts-text-cats')}):</span>
+                    </li>
+                    <li>
+                        <Link
+                            href="https://www.instagram.com/linusandsophieandtoby/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            @linusandsophieandtoby
+                        </Link>
                     </li>
                 </ul>
 

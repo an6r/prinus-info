@@ -45,24 +45,26 @@ export default async function Page({ params }: PageProps) {
                 <h1>{t('resume-title')}</h1>
                 <section className="resume-intro">
                     <div className="introduction">
-                        {Array.from(Array(4), (el, i) => {
-                            return <p key={i}>{t('introduction.p' + i)}</p>;
-                        })}
+                        <p>{t('introduction.p0')}</p>
                     </div>
-                    <div className="pdf-download">
-                        <Link
-                            href="/documents/Maria+Prinus+Release+Manager.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Image
-                                src="/icons8-pdf.png"
-                                alt={t('image-download-resume')}
-                                width={90}
-                                height={90}
-                            />
-                            <span>{t('text-download-resume')}</span>
-                        </Link>
+                    <Link
+                        className="pdf-download"
+                        href="/documents/Maria+Prinus+Release+Manager.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/icons8-pdf.png"
+                            alt={t('image-download-resume')}
+                            width={90}
+                            height={90}
+                        />
+                        <span>{t('text-download-resume')}</span>
+                    </Link>
+                    <div className="introduction">
+                        <p>{t('introduction.p1')}</p>
+                        <p>{t('introduction.p2')}</p>
+                        <p>{t('introduction.p3')}</p>
                     </div>
                 </section>
 

@@ -2,30 +2,40 @@
 
 $border-color: #5c4dff;
 $attention-color: #2c2caa;
+$secondary-header-color: #ddd;
 
 .resume-container {
-    max-width: 1000px;
-    margin: 0 auto 2rem;
-    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
 
     h2 {
-        margin: 2rem 0 1rem;
-        border-bottom: 2px solid #ddd;
+        line-height: 1.3;
+        margin: 1rem 0;
+        border-bottom: 2px solid $secondary-header-color;
         padding-bottom: 0.5rem;
     }
 }
 
 .resume-intro {
     display: flex;
+    flex-direction: column;
 }
 
 .introduction {
-    padding-right: 2rem;
 }
 
 .pdf-download {
-    text-align: center;
     font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+
+    & * {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 .company-item {
@@ -33,10 +43,10 @@ $attention-color: #2c2caa;
     align-items: flex-start;
     gap: 1rem;
     border-left: 3px solid $border-color;
-    margin-left: 2rem;
     padding-bottom: 2rem;
     padding-left: 1rem;
     position: relative;
+    width: 100%;
 }
 
 .company-logo {
@@ -82,5 +92,14 @@ $attention-color: #2c2caa;
 
     li {
         margin-bottom: 0.4rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .resume-container {
+        h2 {
+            text-align: left;
+        }
     }
 }
