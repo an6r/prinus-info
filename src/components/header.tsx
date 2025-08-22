@@ -1,21 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Jura } from 'next/font/google';
 import Link from 'next/link';
 import Image from 'next/image';
 
 import { usePathname } from 'next/navigation';
 
+import { geom } from '@/fonts';
 import LanguageChanger from '@/components/language-switcher';
 import Menu from '@/components/menu';
-
-const jura = Jura({
-    preload: true,
-    style: 'normal',
-    subsets: ['latin'],
-    weight: '600',
-});
 
 function Header() {
     const pathname = usePathname();
@@ -31,7 +24,7 @@ function Header() {
 
     return (
         <header>
-            <div className={jura.className + ' logo'}>
+            <div className={geom.className + ' logo'}>
                 <Link href="/" className="logo-text">
                     Prinus
                 </Link>

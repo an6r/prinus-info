@@ -8,6 +8,8 @@ import TranslationsProvider from '@/components/translations-provider';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 
+import { nunito } from '@/fonts';
+
 import i18nConfig from '@/i18nConfig';
 
 import initTranslations from '../i18n';
@@ -30,7 +32,7 @@ export default async function RootLayout({
 
     return (
         <html lang={locale}>
-            <body>
+            <body className={nunito.className}>
                 <div className="wrapper">
                     <TranslationsProvider
                         namespaces={i18nNamespaces}

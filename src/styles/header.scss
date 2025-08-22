@@ -3,9 +3,6 @@
 header {
     align-items: center;
     width: 100%;
-    padding: 1rem 2rem;
-    background-color: colors.$bg-color;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
@@ -14,7 +11,7 @@ header {
 
     .logo-text {
         align-items: center;
-        color: colors.$primary-color;
+        color: colors.$logo;
         display: block;
         width: 100%;
         text-align: center;
@@ -28,8 +25,6 @@ header {
         position: absolute;
         top: 50px;
         width: 100%;
-        background-color: colors.$bg-color;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         transition: left 0.5s ease-in-out;
     }
 
