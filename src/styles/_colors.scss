@@ -1,16 +1,23 @@
 @use 'sass:color';
 
 /* Updated colors */
-$primary-bg-color: #f3f3f3;
+$primary-bg-color: #F3F3F3;
+$primary-bg-color-alpha30: rgba(243, 243, 243, .8);
 $primary-color: #161616;
 $logo: #9B9492;
+
+$fuchsia: #FF0066;
+$green: #92CC95;
+
+$button-text-color-light: #FFF;
+$button-text-color-dark: #161616;
+
+/* Gradients */
+$fuchsia-blue: linear-gradient(90deg,rgba(255, 0, 102, 1) 0%,rgba(45, 0, 247, 1) 100%);
+$fuchsia-violet: linear-gradient(90deg,rgba(255, 0, 102, 1) 0%,rgba(131, 73, 250, 1) 100%);
+$green-gray: linear-gradient(90deg,rgba(146, 204, 149, 1) 0%,rgba(155, 148, 146, 1) 100%);
 
 
 $header-color: #2a2a2a;
 $link-color: #5c4dff;
 $link-hover-color: #2c2caa;
-
-$button-text-color: #fff;
-$button-color: #5c4dff;
-$secondary-button-color: #4caf50;
-$button-hover-color: #3b39b9;

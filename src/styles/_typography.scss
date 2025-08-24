@@ -18,24 +18,25 @@ h2 {
 
 .logo {
     .logo-text {
-        font-size: 5rem;
+        font-size: 4rem;
         font-optical-sizing: auto;
     }
 }
 
 nav {
-    a {
-        font-weight: 500;
-    }
+  a {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
 }
 
 .list-of-contacts {
-    font-size: 1.5rem;
-    line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
 }
 
 footer {
-    .social a {
-        font-size: 1.2rem;
-    }
+  .social a {
+    font-size: 1.2rem;
+  }
 }

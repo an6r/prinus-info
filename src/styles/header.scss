@@ -1,100 +1,21 @@
 @use '@/styles/colors';
 
 header {
-    align-items: center;
-    width: 100%;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 
     .logo-text {
-        align-items: center;
-        color: colors.$logo;
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-.navigation-section {
-    position: relative;
-
-    .navigation {
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        transition: left 0.5s ease-in-out;
-    }
-
-    &.section-is-closed {
-        .menu-icon {
-            display: block;
-        }
-        .close-icon {
-            display: none;
-        }
-        .navigation {
-            left: -1000px;
-        }
-    }
-
-    &.section-is-opened {
-        .menu-icon {
-            display: none;
-        }
-        .close-icon {
-            display: block;
-        }
-        .navigation {
-            left: 0;
-        }
-    }
-
-    .opener {
-        cursor: pointer;
-
-        img {
-            display: block;
-            margin: auto;
-        }
-    }
-
-    nav {
-        li {
-            padding: 10px 0 0;
-            text-align: center;
-        }
-        a {
-            color: colors.$primary-color;
-            transition: color 0.3s ease;
-
-            &:hover,
-            &.active {
-                color: colors.$link-color;
-            }
-        }
-    }
-
-    .lang-switcher {
-        width: 120px;
-        margin: 20px auto;
-        display: flex;
-        justify-content: space-between;
-
-        .language-flag {
-            display: inline-flex;
-            align-items: center;
-            text-align: center;
-            height: 32px;
-            width: 32px;
-            border-radius: 50%;
-            background-color: rgba(0, 0, 0, 0.1);
-
-            &.active {
-                background-color: colors.$link-color;
-            }
-        }
+      align-items: center;
+      color: colors.$logo;
+      display: flex;
+      gap: 1rem;
     }
 }

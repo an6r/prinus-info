@@ -20,7 +20,7 @@ a {
 }
 
 p {
-    padding-bottom: 1rem;
+    gap: .5rem 0;
 }
 
 h1 {
@@ -40,6 +40,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .main-section {
@@ -52,8 +53,14 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 3rem 2rem;
     gap: 2rem;
+    max-width: 500px;
+    width: 100%;
+
+    p {
+        font-size: 1.2rem;
+        padding-bottom: 1.5rem;
+    }
 
     .buttons {
         display: flex;
@@ -61,46 +68,19 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
-}
 
-.hero-photo {
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.intro {
-    max-width: 500px;
-
-    p {
-        font-size: 1.2rem;
-        padding-bottom: 1.5rem;
-    }
-}
-
-.btn {
-    @include mixins.button;
-}
-
-.btn.secondary {
-    @include mixins.secondary-button;
-}
-
-/* Footer */
-footer {
-    width: 100%;
-    padding: 2rem;
-    text-align: center;
-
-    .social a {
-        margin: 0 1rem;
+    .photo {
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .cat-insta {
-        display: inline-block;
-        height: 64px;
-        width: 64px;
-        background-image: url('/icons8-fat-cat.png');
-        background-repeat: no-repeat;
-        background-position: 1px 17px;
+    .btn {
+        width: 80%;
+        @include mixins.gradient-button-fb;
+    }
+
+    .btn-solid {
+        width: 80%;
+        @include mixins.fuchsia-button;
     }
 }

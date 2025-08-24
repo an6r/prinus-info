@@ -1,0 +1,17 @@
+footer {
+  width: 100%;
+  text-align: center;
+
+  .social a {
+    gap: 0 2rem;
+  }
+
+  .cat-insta {
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    background-image: url('/icons8-fat-cat.png');
+    background-repeat: no-repeat;
+    background-position: 1px 17px;
+  }
+}

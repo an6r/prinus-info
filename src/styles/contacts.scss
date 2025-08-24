@@ -49,7 +49,7 @@
         padding: 1.5rem 0 2rem;
 
         button {
-            @include mixins.secondary-button;
+            @include mixins.green-button;
         }
     }
 }

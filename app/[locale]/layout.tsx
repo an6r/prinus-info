@@ -3,10 +3,13 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 
 import '@/styles/main.scss';
 import '@/styles/header.scss';
+import '@/styles/footer.scss';
+import '@/styles/navigation.scss';
 
 import TranslationsProvider from '@/components/translations-provider';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import MobileNavigation from '@/components/mobile-navigation';
 
 import { nunito } from '@/fonts';
 
@@ -39,6 +42,7 @@ export default async function RootLayout({
                         locale={locale}
                         resources={resources}
                     >
+                        <MobileNavigation />
                         <Header />
                         <main className="main-section">{children}</main>
                         <Footer />
