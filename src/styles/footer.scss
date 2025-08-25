@@ -1,9 +1,17 @@
 footer {
   width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
+  margin: 2rem 0;
 
-  .social a {
-    gap: 0 2rem;
+  .social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: .5rem;
   }
 
   .cat-insta {

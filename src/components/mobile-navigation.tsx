@@ -27,14 +27,14 @@ function MobileNavigation() {
             <div className="opener" onClick={menuToggle}>
                 <Image
                     className="menu-icon"
-                    src="/icons8-menu.png"
+                    src="/menu-open.svg"
                     width={42}
                     height={42}
                     alt="menu"
                 />
                 <Image
                     className="close-icon"
-                    src="/icons8-close.png"
+                    src="/menu-close.svg"
                     width={42}
                     height={42}
                     alt="menu"

@@ -16,9 +16,9 @@ const Hero = () => {
                 width={200}
                 height={200}
                 alt={t('photo')}
-                className="hero-photo"
+                className="photo"
             />
-            <p>{t('greeting-text')}</p>
+            <p className="text">{t('greeting-text')}</p>
             <div className="buttons">
                 <Link href="/resume" className="btn">
                     {t('resume-button')}
