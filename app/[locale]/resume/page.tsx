@@ -51,7 +51,7 @@ export default async function Page({ params }: PageProps) {
                     </div>
                     <div className="pdf-download">
                         <Link
-                            href="/documents/Maria+Prinus+Release+Manager.pdf"
+                            href="/documents/Maria_Prinus_Release_Manager.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
