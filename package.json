@@ -16,7 +16,7 @@
         "@aws-sdk/client-s3": "^3.817.0",
         "@next/third-parties": "^15.3.3",
         "aws-amplify": "^6.15.0",
-        "i18next": "^25.2.1",
+        "i18next": "^25.4.2",
         "i18next-resources-to-backend": "^1.2.1",
         "next": "15.5.0",
         "next-i18n-router": "^5.5.3",
