@@ -3,7 +3,7 @@ backend:
     phases:
         preBuild:
             commands:
-                - nvm install 22
+                - nvm install 24
                 - npm install
         build:
             commands:
