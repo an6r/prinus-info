@@ -1,13 +1,19 @@
 @use 'sass:color';
 
 /* Updated colors */
-$primary-bg-color: #F3F3F3;
-$primary-bg-color-alpha30: rgba(243, 243, 243, .8);
-$primary-color: #161616;
-$logo: #9B9492;
-
+$gray: #9B9492;
 $fuchsia: #FF0066;
 $green: #92CC95;
+
+$primary-bg-color: #F3F3F3;
+$primary-bg-color-alpha: rgba(243, 243, 243, .8);
+$primary-color: #161616;
+$logo: $gray;
+
+/* Headers */
+$header-blue: #2D00F7;
+$header-pink: $fuchsia;
+$header-green: $green;
 
 $button-text-color-light: #FFF;
 $button-text-color-dark: #161616;

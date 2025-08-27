@@ -7,10 +7,29 @@ footer {
   text-align: center;
   margin: 2rem 0;
 
+  .additional-navigation {
+    width: 100%;
+    position: relative;
+
+    .up {
+      position: absolute;
+      right: 1rem;
+      top: -1.5rem;
+    }
+
+    .back {
+      position: absolute;
+      display: block;
+      left: 1rem;
+      top: -1.5rem;
+    }
+  }
+
   .social {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
     gap: .5rem;
   }
 
