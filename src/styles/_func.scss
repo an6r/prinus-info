@@ -1,0 +1,3 @@
+@function font($font-name) {
+  @return var(--font-#{$font-name});
+}
