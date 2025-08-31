@@ -6,6 +6,7 @@
 
   nav {
     background: colors.$primary-bg-color-alpha;
+    backdrop-filter: blur(6px);
     transition: height .5s ease-in-out, top .5s ease-in-out;
 
     position: fixed;
