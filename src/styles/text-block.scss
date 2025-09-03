@@ -1,0 +1,12 @@
+@use 'colors';
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  padding: 0 .5rem;
+  width: 100%;
+
+  .section-pink {
+    background-color: colors.$alpha-fuchsia;
+  }
+}
