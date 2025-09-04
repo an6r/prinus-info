@@ -40,8 +40,8 @@ function AdditionalNavigation() {
                 <Image
                     src={backButtonPath}
                     alt={t('back-button')}
-                    width={40}
-                    height={47}
+                    width={43}
+                    height={50}
                 />
             </Link>
             <ScrollToTop showUnder={160} style={{ position: 'absolute' }}>
@@ -49,8 +49,8 @@ function AdditionalNavigation() {
                     className="up"
                     src={upButtonPath}
                     alt={t('up-button')}
-                    width={48}
-                    height={48}
+                    width={50}
+                    height={50}
                 />
             </ScrollToTop>
         </nav>
