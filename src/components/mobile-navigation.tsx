@@ -28,15 +28,15 @@ function MobileNavigation() {
                 <Image
                     className="menu-icon"
                     src="/menu-open.svg"
-                    width={42}
-                    height={42}
+                    width={50}
+                    height={50}
                     alt="menu"
                 />
                 <Image
                     className="close-icon"
                     src="/menu-close.svg"
-                    width={42}
-                    height={42}
+                    width={50}
+                    height={50}
                     alt="menu"
                 />
             </div>

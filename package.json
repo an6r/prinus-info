@@ -22,7 +22,8 @@
         "next-i18n-router": "^5.5.3",
         "react": "^18",
         "react-dom": "^18",
-        "react-i18next": "^15.7.0"
+        "react-i18next": "^15.7.0",
+        "react-scroll-up": "^1.4.0"
     },
     "devDependencies": {
         "@aws-amplify/backend": "^1.16.1",
