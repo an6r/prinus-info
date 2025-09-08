@@ -1,32 +1,43 @@
 @use 'sass:color';
 
-/* Updated colors */
-$gray: #9B9492;
+/* Main Colors */
+$black: #161616;
+$pearl: #F3F3F3;
 $fuchsia: #FF0066;
-$green: #92CC95;
+$gray: #9B9492;
+$mantis: #66BB6A;
 
-$primary-bg-color: #F3F3F3;
-$primary-bg-color-alpha: rgba(243, 243, 243, .8);
-$primary-color: #161616;
-$logo: $gray;
+/* Accent Colors */
+$violet: #8349FA;
+$blue: #2D00F7;
 
 /* Alpha Colors */
-$alpha-fuchsia: rgba(255, 0, 102, .3);
-
-/* Headers */
-$header-blue: #2D00F7;
-$header-pink: $fuchsia;
-$header-green: $green;
-
-$button-text-color-light: #FFF;
-$button-text-color-dark: #161616;
+$pearl-alpha: color.change($pearl, $alpha: 0.8);
+$fuchsia-alpha-33: color.change($fuchsia, $alpha: 0.33);
+$violet-alpha-33: color.change($violet, $alpha: 0.33);
+$mantis-alpha-68: color.change($mantis, $alpha: 0.68);
+$violet-alpha-68: color.change($violet, $alpha: 0.68);
+$gray-alpha-68: color.change($gray, $alpha: 0.68);
 
 /* Gradients */
-$fuchsia-blue: linear-gradient(90deg,rgba(255, 0, 102, 1) 0%,rgba(45, 0, 247, 1) 100%);
-$fuchsia-violet: linear-gradient(90deg,rgba(255, 0, 102, 1) 0%,rgba(131, 73, 250, 1) 100%);
-$green-gray: linear-gradient(90deg,rgba(146, 204, 149, 1) 0%,rgba(155, 148, 146, 1) 100%);
+$fuchsia-blue: linear-gradient(90deg,$fuchsia 0%,$blue 100%);
+$fuchsia-violet: linear-gradient(90deg,$fuchsia 0%,$violet 100%);
+$fuchsia-violet-33: linear-gradient(90deg,$fuchsia-alpha-33 0%,$violet-alpha-33 100%);
+$green-violet: linear-gradient(90deg,$mantis-alpha-68 0%,$violet-alpha-68 100%);
+$green-gray: linear-gradient(90deg,$mantis-alpha-68 0%,$gray-alpha-68 100%);
 
+/*Functional Colors */
 
-$header-color: #2a2a2a;
-$link-color: #5c4dff;
-$link-hover-color: #2c2caa;
+/* Backgrounds and text */
+$primary-bg-color: $pearl;
+$primary-bg-color-alpha: $pearl-alpha;
+$primary-color: $black;
+
+/* Headers */
+$header-blue: $blue;
+$header-pink: $fuchsia;
+$header-green: $mantis;
+
+/* Buttons */
+$button-text-color-light: $pearl;
+$button-text-color-dark: $black;
