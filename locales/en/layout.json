@@ -1,12 +1,13 @@
 {
     "_header": "__Header",
-    "about-me": "About Me",
-    "blog": "Blog",
-    "contacts": "Contacts",
-    "hobbies": "Hobbies",
-    "home": "Home",
     "logo-alt": "Prinus Logo",
-    "resume": "Resume",
+
+    "_menu": "__Menu",
+    "home": "Home",
+    "about-me": "My Story",
+    "contacts": "Get in Touch",
+    "resume": "My Resume",
+    "genealogy": "Genealogy",
 
     "_footer": "__Footer",
     "linkedin-logo": "LinkedIn Logo",

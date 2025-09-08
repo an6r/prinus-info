@@ -1,12 +1,13 @@
 {
     "_header": "__Header",
-    "about-me": "Обо мне",
-    "blog": "Блог",
-    "contacts": "Контакты",
-    "hobbies": "Хобби",
-    "home": "Главная",
     "logo-alt": "Логотип Prinus",
-    "resume": "Резюме",
+
+    "_menu": "__Menu",
+    "home": "Главная",
+    "about-me": "Моя история",
+    "contacts": "Свяжитесь со мной",
+    "resume": "Моё резюме",
+    "genealogy": "Генеалогия",
 
     "_footer": "__Footer",
     "linkedin-logo": "Логотип LinkedIn",

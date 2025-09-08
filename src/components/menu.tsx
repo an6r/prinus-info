@@ -17,6 +17,10 @@ function Menu() {
                     <Link href="/about">{t('about-me')}</Link>
                 </li>
                 <li>
+                    <Link href="/genealogy">{t('genealogy')}</Link>
+                </li>
+
+                <li>
                     <Link href="/resume">{t('resume')}</Link>
                 </li>
                 <li>

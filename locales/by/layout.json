@@ -1,12 +1,13 @@
 {
     "_header": "__Header",
-    "about-me": "Пра мяне",
-    "blog": "Блог",
-    "contacts": "Кантакты",
-    "hobbies": "Хоббі",
+    "logo-alt": "Лагатып Прынус",
+
+    "_menu": "__Menu",
     "home": "Галоўная",
-    "logo-alt": "Лагатып Prinus",
-    "resume": "Рэзюмэ",
+    "about-me": "Мая гісторыя",
+    "contacts": "Звяжыцеся са мной",
+    "resume": "Маё рэзюмэ",
+    "genealogy": "Генеалогія",
 
     "_footer": "__Footer",
     "linkedin-logo": "Лагатып LinkedIn",
