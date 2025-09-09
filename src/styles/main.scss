@@ -12,11 +12,7 @@ body {
 
 a {
   text-decoration: none;
-  color: colors.$link-color;
-
-  &:hover {
-    color: colors.$link-hover-color;
-  }
+  color: colors.$blue;
 }
 
 p {
@@ -24,7 +20,7 @@ p {
 }
 
 h1, h2 {
-  color: colors.$header-color;
+  color: colors.$header-blue;
 }
 
 .wrapper {
@@ -59,6 +55,7 @@ h1, h2 {
     font-size: 1.5rem;
     text-align: center;
     width: 60%;
+    color: colors.$black;
   }
 
   .text {

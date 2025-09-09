@@ -16,7 +16,7 @@
 /* Solid Color Buttons */
 @mixin green-button {
   @include button;
-  background-color: colors.$green;
+  background-color: colors.$mantis;
   color: colors.$button-text-color-dark;
 }
 

@@ -11,6 +11,7 @@ const nunito = Nunito({
 
 const geom = localFont({
     src: '../fonts/geom-graphic-regular.woff',
+    weight: '400',
     variable: '--font-geom',
 });
 
