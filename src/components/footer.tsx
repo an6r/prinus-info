@@ -21,16 +21,16 @@ function Footer() {
                     <Image
                         src="/linkedin.svg"
                         alt={t('linkedin-logo')}
-                        width={64}
-                        height={64}
+                        width={60}
+                        height={60}
                     />
                 </Link>
                 <Link href="https://www.instagram.com/an6r/" target="_blank">
                     <Image
                         src="/insta.svg"
                         alt={t('instagram-logo')}
-                        width={64}
-                        height={64}
+                        width={60}
+                        height={60}
                     />
                 </Link>
                 <Link
@@ -41,8 +41,8 @@ function Footer() {
                     <Image
                         src="/insta.svg"
                         alt={t('instagram-logo-with-cat')}
-                        width={64}
-                        height={64}
+                        width={60}
+                        height={60}
                     />
                 </Link>
             </div>

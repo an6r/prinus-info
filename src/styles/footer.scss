@@ -9,7 +9,7 @@ footer {
 
   .additional-navigation {
     width: 100%;
-    height: 48px;
+    height: 50px;
     position: relative;
 
     & > * {
@@ -37,10 +37,10 @@ footer {
 
   .cat-insta {
     display: inline-block;
-    height: 64px;
-    width: 64px;
+    height: 60px;
+    width: 60px;
     background-image: url('/icons8-fat-cat.png');
     background-repeat: no-repeat;
-    background-position: 1px 17px;
+    background-position: -2px 16px;
   }
 }

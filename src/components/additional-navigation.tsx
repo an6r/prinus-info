@@ -49,7 +49,10 @@ function AdditionalNavigation() {
                     />
                 </Link>
             )}
-            <ScrollToTop showUnder={160} style={{ position: 'absolute' }}>
+            <ScrollToTop
+                showUnder={160}
+                style={{ position: 'absolute', right: '1rem' }}
+            >
                 <Image
                     className="up"
                     src={upButtonPath}
