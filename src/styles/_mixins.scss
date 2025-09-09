@@ -27,8 +27,9 @@
 }
 
 /* Transparent Buttons with Gradient Borders */
-@mixin tbutton-gradient {
+@mixin tbutton-gradient($bg-color, $text-color) {
   position: relative;
+  color: $text-color;
 
   &::before {
     content: "";
@@ -36,7 +37,7 @@
     inset: 0;
     border-radius: 8px;
     padding: 4px;
-    background: colors.$fuchsia-violet;
+    background: $bg-color;
     mask:
             linear-gradient(#000 0 0) content-box,
             linear-gradient(#000 0 0);

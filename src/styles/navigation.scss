@@ -20,7 +20,7 @@
       margin-top: 5rem;
       display: flex;
       flex-direction: column;
-      gap: 1rem 0;
+      gap: 2rem 0;
       width: 100%;
 
       li {
@@ -34,8 +34,24 @@
           width: 60%;
           text-align: center;
           padding: 1rem 0;
-          @include mixins.tbutton-gradient;
-          color: colors.$button-text-color-dark;
+
+          &:hover {
+            background: colors.$dark-blue;
+          }
+
+          &.home,
+          &.story {
+            @include mixins.tbutton-gradient(colors.$fuchsia-violet-33, colors.$button-text-color-dark);
+          }
+          &.resume {
+            @include mixins.gradient-button-fb;
+          }
+          &.contacts {
+            @include mixins.fuchsia-button;
+          }
+          &.genealogy {
+            @include mixins.tbutton-gradient(colors.$green-gray, colors.$button-text-color-dark);
+          }
         }
       }
     }
@@ -75,23 +91,6 @@
     img {
       display: block;
       margin: auto;
-    }
-  }
-
-  .lang-switcher {
-    width: 120px;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
-
-    .language-flag {
-      display: inline-flex;
-      align-items: center;
-      text-align: center;
-      height: 32px;
-      width: 32px;
-      border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.1);
     }
   }
 }

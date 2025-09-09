@@ -11,16 +11,29 @@ function Menu() {
         <nav className="nav" role="navigation" aria-label="Main">
             <ul>
                 <li>
-                    <Link href="/">{t('home')}</Link>
+                    <Link href="/" className="home">
+                        {t('home')}
+                    </Link>
                 </li>
                 <li>
-                    <Link href="/about">{t('about-me')}</Link>
+                    <Link href="/about" className="story">
+                        {t('about-me')}
+                    </Link>
                 </li>
                 <li>
-                    <Link href="/resume">{t('resume')}</Link>
+                    <Link href="/" className="genealogy">
+                        Genealogy
+                    </Link>
                 </li>
                 <li>
-                    <Link href="/contacts">{t('contacts')}</Link>
+                    <Link href="/resume" className="resume">
+                        {t('resume')}
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/contacts" className="contacts">
+                        {t('contacts')}
+                    </Link>
                 </li>
             </ul>
         </nav>

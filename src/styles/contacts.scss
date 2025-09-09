@@ -34,8 +34,7 @@
         width: 80%;
         text-align: center;
         padding: 1rem .5rem;
-        @include mixins.tbutton-gradient;
-        color: colors.$gray;
+        @include mixins.tbutton-gradient(colors.$fuchsia-violet, colors.$gray);
       }
     }
   }
