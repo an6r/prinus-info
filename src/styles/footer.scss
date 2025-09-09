@@ -1,0 +1,44 @@
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 2rem 0;
+
+  .additional-navigation {
+    width: 100%;
+    position: relative;
+
+    .up {
+      position: absolute;
+      right: 1rem;
+      top: -1.5rem;
+    }
+
+    .back {
+      position: absolute;
+      display: block;
+      left: 1rem;
+      top: -1.5rem;
+    }
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: .5rem;
+  }
+
+  .cat-insta {
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    background-image: url('/icons8-fat-cat.png');
+    background-repeat: no-repeat;
+    background-position: 1px 17px;
+  }
+}

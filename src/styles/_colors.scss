@@ -1,13 +1,43 @@
 @use 'sass:color';
 
-$primary-bg-color: #fdfdfb;
-$primary-color: #333;
-$header-color: #2a2a2a;
-$bg-color: #fff;
-$link-color: #5c4dff;
-$link-hover-color: #2c2caa;
+/* Main Colors */
+$black: #161616;
+$pearl: #F3F3F3;
+$fuchsia: #FF0066;
+$gray: #9B9492;
+$mantis: #66BB6A;
 
-$button-text-color: #fff;
-$button-color: #5c4dff;
-$secondary-button-color: #4caf50;
-$button-hover-color: #3b39b9;
+/* Accent Colors */
+$violet: #8349FA;
+$blue: #2D00F7;
+
+/* Alpha Colors */
+$pearl-alpha: color.change($pearl, $alpha: 0.8);
+$fuchsia-alpha-33: color.change($fuchsia, $alpha: 0.33);
+$violet-alpha-33: color.change($violet, $alpha: 0.33);
+$mantis-alpha-68: color.change($mantis, $alpha: 0.68);
+$violet-alpha-68: color.change($violet, $alpha: 0.68);
+$gray-alpha-68: color.change($gray, $alpha: 0.68);
+
+/* Gradients */
+$fuchsia-blue: linear-gradient(90deg,$fuchsia 0%,$blue 100%);
+$fuchsia-violet: linear-gradient(90deg,$fuchsia 0%,$violet 100%);
+$fuchsia-violet-33: linear-gradient(90deg,$fuchsia-alpha-33 0%,$violet-alpha-33 100%);
+$green-violet: linear-gradient(90deg,$mantis-alpha-68 0%,$violet-alpha-68 100%);
+$green-gray: linear-gradient(90deg,$mantis-alpha-68 0%,$gray-alpha-68 100%);
+
+/*Functional Colors */
+
+/* Backgrounds and text */
+$primary-bg-color: $pearl;
+$primary-bg-color-alpha: $pearl-alpha;
+$primary-color: $black;
+
+/* Headers */
+$header-blue: $blue;
+$header-pink: $fuchsia;
+$header-green: $mantis;
+
+/* Buttons */
+$button-text-color-light: $pearl;
+$button-text-color-dark: $black;

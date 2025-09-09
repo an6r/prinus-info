@@ -1,0 +1,21 @@
+@use '@/styles/colors';
+
+header {
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+    .logo-text {
+      align-items: center;
+      color: colors.$gray;
+      display: flex;
+      gap: 1rem;
+    }
+}
