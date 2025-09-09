@@ -1,0 +1,68 @@
+'use client';
+
+import { MouseEvent, useEffect, useState } from 'react';
+
+import Link from 'next/link';
+import Image from 'next/image';
+
+import ScrollToTop from 'react-scroll-up';
+
+import { usePathname, useRouter } from 'next/navigation';
+import { useTranslation } from 'react-i18next';
+
+import { isHomePage } from '@/utils/path';
+
+import i18nConfig from '@/i18nConfig';
+
+function AdditionalNavigation() {
+    const [backButtonPath, setBackButtonPath] = useState<string>(
+        `/back-icons/back-${i18nConfig.defaultLocale}.svg`
+    );
+    const [upButtonPath, setUpButtonPath] = useState<string>(
+        `/up-icons/up-${i18nConfig.defaultLocale}.svg`
+    );
+    const { t, i18n } = useTranslation();
+    const router = useRouter();
+    const currentPathname = usePathname();
+
+    const onClickBack = (e: MouseEvent) => {
+        // Prevent the default behavior of the link + stop propagation
+        e.preventDefault();
+        e.stopPropagation();
+        router.back();
+    };
+
+    useEffect(() => {
+        setBackButtonPath(`/back-icons/back-${i18n.resolvedLanguage}.svg`);
+        setUpButtonPath(`/up-icons/up-${i18n.resolvedLanguage}.svg`);
+    }, [i18n.resolvedLanguage]);
+
+    return (
+        <nav className="additional-navigation">
+            {!isHomePage(currentPathname) && (
+                <Link className="back" href="#" onClick={onClickBack}>
+                    <Image
+                        src={backButtonPath}
+                        alt={t('back-button')}
+                        width={43}
+                        height={50}
+                    />
+                </Link>
+            )}
+            <ScrollToTop
+                showUnder={160}
+                style={{ position: 'absolute', right: '1rem' }}
+            >
+                <Image
+                    className="up"
+                    src={upButtonPath}
+                    alt={t('up-button')}
+                    width={50}
+                    height={50}
+                />
+            </ScrollToTop>
+        </nav>
+    );
+}
+
+export default AdditionalNavigation;
