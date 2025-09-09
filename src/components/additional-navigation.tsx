@@ -7,10 +7,12 @@ import Image from 'next/image';
 
 import ScrollToTop from 'react-scroll-up';
 
+import { usePathname, useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 
+import { isHomePage } from '@/utils/path';
+
 import i18nConfig from '@/i18nConfig';
-import { useRouter } from 'next/navigation';
 
 function AdditionalNavigation() {
     const [backButtonPath, setBackButtonPath] = useState<string>(
@@ -21,6 +23,7 @@ function AdditionalNavigation() {
     );
     const { t, i18n } = useTranslation();
     const router = useRouter();
+    const currentPathname = usePathname();
 
     const onClickBack = (e: MouseEvent) => {
         // Prevent the default behavior of the link + stop propagation
@@ -36,14 +39,16 @@ function AdditionalNavigation() {
 
     return (
         <nav className="additional-navigation">
-            <Link className="back" href="#" onClick={onClickBack}>
-                <Image
-                    src={backButtonPath}
-                    alt={t('back-button')}
-                    width={43}
-                    height={50}
-                />
-            </Link>
+            {!isHomePage(currentPathname) && (
+                <Link className="back" href="#" onClick={onClickBack}>
+                    <Image
+                        src={backButtonPath}
+                        alt={t('back-button')}
+                        width={43}
+                        height={50}
+                    />
+                </Link>
+            )}
             <ScrollToTop showUnder={160} style={{ position: 'absolute' }}>
                 <Image
                     className="up"
