@@ -39,7 +39,7 @@
         "prettier": "^3.6.2",
         "sass": "^1.91.0",
         "tsx": "^4.20.5",
-        "typescript": "^5"
+        "typescript": "^5.9.2"
     },
     "engines": {
         "node": ">=22"
