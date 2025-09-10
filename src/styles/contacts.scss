@@ -30,11 +30,8 @@
       align-items: center;
 
       a {
-        display: inline-block;
         width: 80%;
-        text-align: center;
-        padding: 1rem .5rem;
-        @include mixins.tbutton-gradient(colors.$fuchsia-violet, colors.$gray);
+        @include mixins.button-gradient(colors.$fuchsia-violet-33, colors.$button-text-color-dark, $is-transparent: true);
       }
     }
   }
@@ -59,11 +56,11 @@
 
   .buttons {
       display: flex;
-      gap: 1rem;
-      padding: 1.5rem 0 2rem;
+      gap: 1rem 0;
+      padding: 2rem 0;
 
       button {
-        @include mixins.green-button;
+        @include mixins.button(colors.$mantis, colors.$button-text-color-dark);
       }
   }
 }

@@ -1,65 +1,56 @@
 @use 'colors';
 
-@mixin button {
+@mixin button($bg-color, $text-color) {
   border-radius: 8px;
-  padding: 0.75rem 1rem;
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 1rem;
   text-align: center;
   transition: background-color 0.3s ease;
-
-  width: 50%;
 
   &:hover {
     cursor: pointer;
   }
 }
 
-/* Solid Color Buttons */
-@mixin green-button {
-  @include button;
-  background-color: colors.$mantis;
-  color: colors.$button-text-color-dark;
-}
-
-@mixin fuchsia-button {
-  @include button;
-  background-color: colors.$fuchsia;
-  color: colors.$button-text-color-light;
-}
-
 /* Transparent Buttons with Gradient Borders */
-@mixin tbutton-gradient($bg-color, $text-color) {
+@mixin button-gradient($bg-color, $text-color, $is-transparent: false) {
   position: relative;
+  text-align: center;
+  padding: 1rem;
   color: $text-color;
 
-  &::before {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:before {
     content: "";
     position: absolute;
     inset: 0;
     border-radius: 8px;
     padding: 4px;
     background: $bg-color;
-    mask:
-            linear-gradient(#000 0 0) content-box,
-            linear-gradient(#000 0 0);
-    mask-composite: exclude;
+    z-index: -1;
+
+    @if $is-transparent {
+      mask:
+              linear-gradient(#000 0 0) content-box,
+              linear-gradient(#000 0 0);
+      mask-composite: exclude;
+    }
   }
 }
 
 /* Gradient Buttons */
 @mixin gradient-button-fb {
-  @include button;
-  background: colors.$fuchsia-blue;
-  color: colors.$button-text-color-light;
+  @include button-gradient(colors.$fuchsia-blue, colors.$button-text-color-light);
 }
 
 @mixin gradient-button-fv {
-  @include button;
-  background: colors.$fuchsia-violet;
-  color: colors.$button-text-color-light;
+  @include button-gradient(colors.$fuchsia-violet, colors.$button-text-color-light);
 }
 
 @mixin gradient-button-gg {
-  @include button;
-  background: colors.$green-gray;
-  color: colors.$button-text-color-dark;
+  @include button-gradient(colors.$green-gray, colors.$button-text-color-dark);
 }

@@ -27,5 +27,5 @@
 }
 
 .home-link {
-    @include mixins.button;
+  @include mixins.gradient-button-fb;
 }
