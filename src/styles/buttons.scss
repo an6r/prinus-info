@@ -1,0 +1,57 @@
+@use 'colors';
+@import 'mixins';
+
+/* Gradient fuchsia-blue */
+@mixin type-one() {
+  @include button-gradient(colors.$fuchsia-blue, colors.$button-text-color-light);
+
+  &:hover {
+    @include button-gradient(colors.$dark-pink-blue, colors.$button-text-color-light);
+  }
+
+  &:focus {
+    @include button-gradient(colors.$dark-pink, colors.$button-text-color-light);
+  }
+
+  &:active,
+  &.active {
+    @include button-gradient(colors.$dark-blue, colors.$button-text-color-light);
+  }
+}
+
+/* Solid fuchsia */
+@mixin type-two() {
+  @include button-gradient(colors.$fuchsia, colors.$button-text-color-light);
+
+  &:hover,
+  &:active,
+  &.active {
+    @include button-gradient(colors.$dark-blue, colors.$button-text-color-light);
+  }
+
+  &:focus {
+    @include button-gradient(colors.$dark-pink, colors.$button-text-color-light);
+  }
+}
+
+/* Border gradient fuchsia-blue */
+@mixin type-three() {
+  @include button-gradient(colors.$fuchsia-blue-33, colors.$button-text-color-dark, $is-transparent: true);
+
+  &:hover {
+    @include button-gradient(colors.$fuchsia-blue-33, colors.$button-text-color-dark);
+  }
+
+  &:focus {
+    @include button-gradient(colors.$dark-pink, colors.$button-text-color-light, $is-transparent: true);
+  }
+
+  &:active,
+  &.active {
+    @include button-gradient(colors.$dark-blue, colors.$button-text-color-light, $is-transparent: true);
+  }
+}
+
+@mixin type-four() {
+  @include button-gradient(colors.$green-gray, colors.$button-text-color-dark, $is-transparent: true);
+}

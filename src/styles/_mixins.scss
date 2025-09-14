@@ -6,7 +6,6 @@
   color: $text-color;
   padding: 1rem;
   text-align: center;
-  transition: background-color 0.3s ease;
 
   &:hover {
     cursor: pointer;
@@ -15,22 +14,20 @@
 
 /* Transparent Buttons with Gradient Borders */
 @mixin button-gradient($bg-color, $text-color, $is-transparent: false) {
+  cursor: pointer;
   position: relative;
   text-align: center;
   padding: 1rem;
   color: $text-color;
 
-  &:hover {
-    cursor: pointer;
-  }
-
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     inset: 0;
     border-radius: 8px;
     padding: 4px;
     background: $bg-color;
+    transition: background 0.3s ease;
     z-index: -1;
 
     @if $is-transparent {
@@ -40,17 +37,4 @@
       mask-composite: exclude;
     }
   }
-}
-
-/* Gradient Buttons */
-@mixin gradient-button-fb {
-  @include button-gradient(colors.$fuchsia-blue, colors.$button-text-color-light);
-}
-
-@mixin gradient-button-fv {
-  @include button-gradient(colors.$fuchsia-violet, colors.$button-text-color-light);
-}
-
-@mixin gradient-button-gg {
-  @include button-gradient(colors.$green-gray, colors.$button-text-color-dark);
 }

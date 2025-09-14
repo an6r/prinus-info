@@ -1,4 +1,5 @@
 @use 'colors';
+@use '@/styles/buttons';
 @use '@/styles/mixins';
 
 .navigation-section {
@@ -32,22 +33,18 @@
         a {
           width: 60%;
 
-          &:hover {
-            background: colors.$dark-blue;
-          }
-
           &.home,
           &.story {
-            @include mixins.button-gradient(colors.$fuchsia-violet-33, colors.$button-text-color-dark, $is-transparent: true);
+            @include buttons.type-three;
           }
           &.resume {
-            @include mixins.gradient-button-fb;
+            @include buttons.type-one;
           }
           &.contacts {
-            @include mixins.button(colors.$fuchsia, colors.$button-text-color-light);
+            @include buttons.type-two;
           }
           &.genealogy {
-            @include mixins.button-gradient(colors.$green-gray, colors.$button-text-color-dark, $is-transparent: true);
+            @include buttons.type-four;
           }
         }
       }

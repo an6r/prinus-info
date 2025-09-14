@@ -1,5 +1,5 @@
 @use 'colors';
-@use 'mixins';
+@use 'buttons';
 
 .contacts-container {
   display: flex;
@@ -31,7 +31,7 @@
 
       a {
         width: 80%;
-        @include mixins.button-gradient(colors.$fuchsia-violet-33, colors.$button-text-color-dark, $is-transparent: true);
+        @include buttons.type-three;
       }
     }
   }
@@ -52,15 +52,5 @@
       display: block;
       padding: 10px 20px;
     }
-  }
-
-  .buttons {
-      display: flex;
-      gap: 1rem 0;
-      padding: 2rem 0;
-
-      button {
-        @include mixins.button(colors.$mantis, colors.$button-text-color-dark);
-      }
   }
 }

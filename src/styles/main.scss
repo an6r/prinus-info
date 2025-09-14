@@ -3,6 +3,7 @@
 @use '@/styles/typography';
 @use '@/styles/colors';
 @use '@/styles/mixins';
+@use '@/styles/buttons';
 
 body {
   background: colors.$primary-bg-color;
@@ -80,12 +81,12 @@ h1, h2 {
   }
 
   .btn {
-    @include mixins.gradient-button-fb;
+    @include buttons.type-one;
     width: 100%;
   }
 
   .btn-solid {
-    @include mixins.button(colors.$fuchsia, colors.$button-text-color-light);
+    @include buttons.type-two;
     width: 100%;
   }
 }
