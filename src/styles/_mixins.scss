@@ -1,17 +1,5 @@
 @use 'colors';
 
-@mixin button($bg-color, $text-color) {
-  border-radius: 8px;
-  background-color: $bg-color;
-  color: $text-color;
-  padding: 1rem;
-  text-align: center;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
 /* Transparent Buttons with Gradient Borders */
 @mixin button-gradient($bg-color, $text-color, $is-transparent: false) {
   cursor: pointer;
@@ -27,7 +15,7 @@
     border-radius: 8px;
     padding: 4px;
     background: $bg-color;
-    transition: background 0.3s ease;
+    transition: background 0.5s ease;
     z-index: -1;
 
     @if $is-transparent {

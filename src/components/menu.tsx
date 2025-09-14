@@ -1,40 +1,65 @@
 'use client';
 
+import i18nConfig from '@/i18nConfig';
 import { useTranslation } from 'react-i18next';
+import { usePathname } from 'next/navigation';
 
 import Link from 'next/link';
 
 function Menu() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const currentPathname = usePathname();
+    const currentLocale = i18n.resolvedLanguage || i18nConfig.defaultLocale;
+
+    const isActive = (pathname: string) => {
+        console.log(`/${currentLocale}${pathname}`, currentPathname);
+        return `/${currentLocale}${pathname}` === currentPathname;
+    };
+
+    const menuItems = [
+        {
+            href: '/',
+            text: t('home'),
+            className: 'home',
+        },
+        {
+            href: '/about',
+            text: t('about-me'),
+            className: 'story',
+        },
+        {
+            href: '/genealogy',
+            text: 'genealogy',
+            className: 'genealogy',
+        },
+        {
+            href: '/resume',
+            text: t('resume'),
+            className: 'resume',
+        },
+        {
+            href: '/contacts',
+            text: t('contacts'),
+            className: 'contacts',
+        },
+    ];
 
     return (
         <nav className="nav" role="navigation" aria-label="Main">
             <ul>
-                <li>
-                    <Link href="/" className="home">
-                        {t('home')}
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/about" className="story">
-                        {t('about-me')}
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/" className="genealogy">
-                        Genealogy
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/resume" className="resume">
-                        {t('resume')}
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/contacts" className="contacts">
-                        {t('contacts')}
-                    </Link>
-                </li>
+                {menuItems.map((item, index) => (
+                    <li key={index}>
+                        <Link
+                            href={item.href}
+                            className={
+                                item.className +
+                                (isActive(item.href) ? ' active' : '')
+                            }
+                        >
+                            {item.text}
+                        </Link>
+                    </li>
+                ))}
             </ul>
         </nav>
     );
