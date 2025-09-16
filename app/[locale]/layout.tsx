@@ -1,20 +1,21 @@
 // @ts-check
-import { Amplify } from 'aws-amplify';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 import '@/styles/main.scss';
+import '@/styles/header.scss';
+import '@/styles/footer.scss';
+import '@/styles/navigation.scss';
 
 import TranslationsProvider from '@/components/translations-provider';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import MobileNavigation from '@/components/mobile-navigation';
+
+import { nunito } from '@/fonts';
 
 import i18nConfig from '@/i18nConfig';
 
-import outputs from '@/amplify_outputs.json';
-
 import initTranslations from '../i18n';
-
-Amplify.configure(outputs);
 
 export function generateStaticParams() {
     return i18nConfig.locales.map((locale) => ({ locale }));
@@ -34,13 +35,14 @@ export default async function RootLayout({
 
     return (
         <html lang={locale}>
-            <body>
+            <body className={nunito.className}>
                 <div className="wrapper">
                     <TranslationsProvider
                         namespaces={i18nNamespaces}
                         locale={locale}
                         resources={resources}
                     >
+                        <MobileNavigation />
                         <Header />
                         <main className="main-section">{children}</main>
                         <Footer />

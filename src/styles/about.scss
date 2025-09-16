@@ -1,38 +1,8 @@
-.text-image-container {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    align-items: center;
-
-    .image {
-        flex-grow: 1;
-        min-width: 200px;
-
-        img {
-            display: block;
-            max-width: 100%;
-            border-radius: 8px;
-        }
-    }
-
-    .section {
-        flex-grow: 1;
-        flex-basis: 60%;
-        min-width: 300px;
-    }
-}
-
-.special {
-    padding-bottom: 2rem;
-
-    li {
-        font-style: italic;
-        padding-top: 10px;
-
-        @for $i from 1 through 3 {
-            &:nth-child(#{$i}) {
-                padding-left: #{$i + 1}rem;
-            }
-        }
-    }
+.about-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  width: 100%;
 }

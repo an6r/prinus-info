@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -9,6 +8,7 @@ import { createMetadata } from '@/utils/metadata';
 
 import TranslationsProvider from '@/components/translations-provider';
 
+import { geom } from '@/fonts';
 import '@/styles/contacts.scss';
 
 const i18nNamespaces = ['contacts'];
@@ -62,77 +62,41 @@ export default async function Page({ params }: PageProps) {
             locale={locale}
             resources={resources}
         >
-            <section className="contacts">
-                <h1>{t('contacts-title')}</h1>
+            <section className="contacts-container">
+                <h1 className={geom.className}>{t('contacts-title')}</h1>
                 <p className="introduction">{t('contacts-intro')}</p>
                 <ul className="list-of-contacts">
-                    <li className="email">
-                        <Image
-                            src="/icons8-email.png"
-                            alt={t('contacts-icons-email')}
-                            width={40}
-                            height={40}
-                        />
-                        <span>
-                            {t('contacts-text-email')}:&nbsp;
-                            <Link href="mailto:maria@prinus.info">
-                                maria@prinus.info
-                            </Link>
-                        </span>
+                    <li>
+                        <Link href="mailto:maria@prinus.info">
+                            {t('contacts-text-email')}
+                        </Link>
                     </li>
-                    <li className="linkedin">
-                        <Image
-                            src="/icons8-linkedin.png"
-                            alt={t('contacts-icons-linkedin')}
-                            width={40}
-                            height={40}
-                        />
-                        <span>
-                            LinkedIn:&nbsp;
-                            <Link
-                                href="https://www.linkedin.com/in/mariaprinus/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                linkedin.com/in/mariaprinus
-                            </Link>
-                        </span>
+                    <li>
+                        <Link
+                            href="https://www.linkedin.com/in/mariaprinus/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </Link>
                     </li>
-                    <li className="instagram">
-                        <Image
-                            src="/icons8-instagram.png"
-                            alt={t('contacts-icons-instagram')}
-                            width={40}
-                            height={40}
-                        />
-                        <span>
-                            Instagram ({t('contacts-text-personal')}):&nbsp;
-                            <Link
-                                href="https://www.instagram.com/an6r"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                @an6r
-                            </Link>
-                        </span>
+                    <li>
+                        <Link
+                            href="https://www.instagram.com/an6r"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Instagram ({t('contacts-text-personal')})
+                        </Link>
                     </li>
-                    <li className="instagram cat">
-                        <Image
-                            src="/icons8-instagram.png"
-                            alt={t('contacts-icons-instagram')}
-                            width={40}
-                            height={40}
-                        />
-                        <span>
-                            Instagram ({t('contacts-text-cats')}):&nbsp;
-                            <Link
-                                href="https://www.instagram.com/linusandsophieandtoby/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                @linusandsophieandtoby
-                            </Link>
-                        </span>
+                    <li>
+                        <Link
+                            href="https://www.instagram.com/linusandsophieandtoby/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Instagram ({t('contacts-text-cats')})
+                        </Link>
                     </li>
                 </ul>
 

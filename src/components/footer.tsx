@@ -5,11 +5,14 @@ import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import AdditionalNavigation from '@/components/additional-navigation';
+
 function Footer() {
     const { t } = useTranslation();
 
     return (
         <footer>
+            <AdditionalNavigation />
             <div className="social">
                 <Link
                     href="https://www.linkedin.com/in/mariaprinus/"
@@ -18,16 +21,16 @@ function Footer() {
                     <Image
                         src="/linkedin.svg"
                         alt={t('linkedin-logo')}
-                        width={64}
-                        height={64}
+                        width={60}
+                        height={60}
                     />
                 </Link>
                 <Link href="https://www.instagram.com/an6r/" target="_blank">
                     <Image
                         src="/insta.svg"
                         alt={t('instagram-logo')}
-                        width={64}
-                        height={64}
+                        width={60}
+                        height={60}
                     />
                 </Link>
                 <Link
@@ -38,8 +41,8 @@ function Footer() {
                     <Image
                         src="/insta.svg"
                         alt={t('instagram-logo-with-cat')}
-                        width={64}
-                        height={64}
+                        width={60}
+                        height={60}
                     />
                 </Link>
             </div>

@@ -1,0 +1,44 @@
+@use 'colors';
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem 1rem;
+  padding: 2rem;
+  width: 100%;
+  border-radius: 20px;
+
+  h2 {
+    font-size: 1.3rem;
+    margin: 0 0 1rem;
+  }
+
+  img {
+    border-radius: 75px;
+  }
+
+  details {
+    display: flex;
+    user-select: none;
+    margin: 1rem 0 0;
+    width: 100%;
+
+    & > summary,
+    & > p {
+      display: flex;
+      cursor: pointer;
+    }
+  }
+
+  summary {
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  &.section-pink {
+    background-color: colors.$fuchsia-alpha-33;
+  }
+}
