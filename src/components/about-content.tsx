@@ -1,30 +1,11 @@
 'use client';
 
-import Image from 'next/image';
-
 import type { AboutContentData } from '@/app/types';
 
-import maria_about from '@/public/photos/maria-prinus-about.jpg';
-import cats_about from '@/public/photos/cats-about.jpg';
+import TextBlock from '@/components/text-block';
 
-function TextBlock({
-    header,
-    textList,
-}: {
-    header: string;
-    textList: Array<string>;
-}) {
-    return (
-        <article className="section">
-            <h2>{header}</h2>
-            <div className="text">
-                {textList.map((val, key) => (
-                    <p key={key}>{val}</p>
-                ))}
-            </div>
-        </article>
-    );
-}
+import maria_about from '@/public/photos/maria-prinus-about.jpg';
+// import cats_about from '@/public/photos/cats-about.jpg';
 
 function AboutContent({
     data,
@@ -34,48 +15,14 @@ function AboutContent({
     imageAlts: { maria: string; cats: string };
 }) {
     return (
-        <div className="about-container">
-            <div className="text-image-container">
-                <div className="image">
-                    <Image
-                        width={300}
-                        src={maria_about}
-                        alt={imageAlts.maria}
-                    />
-                </div>
-                <TextBlock
-                    header={data.introduction.header}
-                    textList={data.introduction.text}
-                />
-            </div>
-
+        <>
             <TextBlock
-                header={data.experience.header}
-                textList={data.experience.text}
+                header={data.introduction.header}
+                imageSrc={maria_about}
+                imageAlt={imageAlts.maria}
+                textList={data.introduction.text}
             />
-
-            <div className="text-image-container">
-                <TextBlock
-                    header={data.personal.header}
-                    textList={data.personal.text}
-                />
-                <div className="image">
-                    <Image
-                        width={500}
-                        height={394}
-                        src={cats_about}
-                        alt={imageAlts.cats}
-                    />
-                </div>
-            </div>
-
-            <TextBlock header={data.site.header} textList={data.site.text} />
-            <ul className="special">
-                <li>{data.site.special.p0}</li>
-                <li>{data.site.special.p1}</li>
-                <li>{data.site.special.p2}</li>
-            </ul>
-        </div>
+        </>
     );
 }
 

@@ -45,7 +45,6 @@ export default async function Page({ params }: PageProps) {
                 resources={resources}
             >
                 <section className="about-page">
-                    <h1>{t('about-title')}</h1>
                     {data && (
                         <AboutContent
                             data={data}
