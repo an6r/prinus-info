@@ -6,23 +6,29 @@ $pearl: #F3F3F3;
 $fuchsia: #FF0066;
 $gray: #9B9492;
 $mantis: #66BB6A;
+$white: #FFFFFF;
 
 /* Accent Colors */
 $violet: #8349FA;
 $blue: #2D00F7;
+$dark-blue: #05007D;
+$dark-pink: #C00066;
 
 /* Alpha Colors */
 $pearl-alpha: color.change($pearl, $alpha: 0.8);
 $fuchsia-alpha-33: color.change($fuchsia, $alpha: 0.33);
+$blue-alpha-33: color.change($blue, $alpha: 0.33);
 $violet-alpha-33: color.change($violet, $alpha: 0.33);
+$gray-alpha-41: color.change($gray, $alpha: 0.41);
 $mantis-alpha-68: color.change($mantis, $alpha: 0.68);
 $violet-alpha-68: color.change($violet, $alpha: 0.68);
 $gray-alpha-68: color.change($gray, $alpha: 0.68);
 
 /* Gradients */
 $fuchsia-blue: linear-gradient(90deg,$fuchsia 0%,$blue 100%);
+$dark-pink-blue: linear-gradient(90deg,$dark-pink 0%,$dark-blue 100%);
 $fuchsia-violet: linear-gradient(90deg,$fuchsia 0%,$violet 100%);
-$fuchsia-violet-33: linear-gradient(90deg,$fuchsia-alpha-33 0%,$violet-alpha-33 100%);
+$fuchsia-blue-33: linear-gradient(90deg,$fuchsia-alpha-33 0%,$blue-alpha-33 100%);
 $green-violet: linear-gradient(90deg,$mantis-alpha-68 0%,$violet-alpha-68 100%);
 $green-gray: linear-gradient(90deg,$mantis-alpha-68 0%,$gray-alpha-68 100%);
 
@@ -39,5 +45,5 @@ $header-pink: $fuchsia;
 $header-green: $mantis;
 
 /* Buttons */
-$button-text-color-light: $pearl;
+$button-text-color-light: $white;
 $button-text-color-dark: $black;

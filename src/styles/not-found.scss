@@ -1,4 +1,4 @@
-@use '@/styles/mixins';
+@use '@/styles/buttons';
 
 .not-found-container {
     max-width: 900px;
@@ -27,5 +27,5 @@
 }
 
 .home-link {
-    @include mixins.button;
+  @include buttons.type-four;
 }

@@ -1,5 +1,5 @@
 @use 'colors';
-@use 'mixins';
+@use 'buttons';
 
 .contacts-container {
   display: flex;
@@ -30,12 +30,8 @@
       align-items: center;
 
       a {
-        display: inline-block;
         width: 80%;
-        text-align: center;
-        padding: 1rem .5rem;
-        @include mixins.tbutton-gradient;
-        color: colors.$gray;
+        @include buttons.type-three;
       }
     }
   }
@@ -56,15 +52,5 @@
       display: block;
       padding: 10px 20px;
     }
-  }
-
-  .buttons {
-      display: flex;
-      gap: 1rem;
-      padding: 1.5rem 0 2rem;
-
-      button {
-        @include mixins.green-button;
-      }
   }
 }
