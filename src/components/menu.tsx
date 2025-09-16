@@ -12,7 +12,6 @@ function Menu() {
     const currentLocale = i18n.resolvedLanguage || i18nConfig.defaultLocale;
 
     const isActive = (pathname: string) => {
-        console.log(`/${currentLocale}${pathname}`, currentPathname);
         return `/${currentLocale}${pathname}` === currentPathname;
     };
 
